@@ -1,0 +1,250 @@
+@charset "UTF-8";
+.the_page_mover {
+  -webkit-transition: .325s var(--performance-trasition);
+  -o-transition: .325s var(--performance-trasition);
+  transition: .325s var(--performance-trasition);
+  opacity: 0;
+}
+.the_page_mover.loaded {
+  opacity: 1;
+}
+.common_load {
+  pointer-events: all;
+}
+.common_load.loaded {
+  pointer-events: none;
+}
+.common_load::before,
+.common_load::after {
+  -webkit-transition: .525s var(--img-trasition-func);
+  -o-transition: .525s var(--img-trasition-func);
+  transition: .525s var(--img-trasition-func);
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.common_load.loaded::before,
+.common_load.loaded::after {
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+}
+/*----------------------------------------{ common setting }---*/
+.cmn_link_unit {
+  opacity: 1;
+  -webkit-transition: .35s var(--img-trasition-func);
+  -o-transition: .35s var(--img-trasition-func);
+  transition: .35s var(--img-trasition-func);
+}
+.cmn_link_unit:hover {
+  opacity: .55;
+}
+.top_blog_title,
+.top_blog_thumb,
+.cmn_blog_list_thumb {
+  -webkit-transition: .35s var(--img-trasition-func);
+  -o-transition: .35s var(--img-trasition-func);
+  transition: .35s var(--img-trasition-func);
+}
+.top_blog_thumb,
+.cmn_blog_list_thumb {
+  opacity: 1;
+}
+.top_blog_title {
+  background-color: var(--main-color-tone-green);
+  color: var(--color-text);
+}
+.top_blog_link:hover .top_blog_thumb,
+.cmn_blog_list_link:hover .cmn_blog_list_thumb {
+  opacity: .75;
+}
+.top_blog_link:hover .top_blog_title {
+  background-color: var(--main-color-tone);
+  color: var(--white-tone);
+}
+/*---- common element style ---*/
+/*----------------------------------------{ header }---*/
+/*----------------------------------------{ header aside }---*/
+/*----------------------------------------{ nav }---*/
+/*----------------------------------------{ footer }---*/
+/*----------------------------------------{ top }---*/
+/*---- top - first scene ---*/
+/* top - first scene (SVG element) */
+/* top - first scene (SVG element - sky) */
+/* top - first scene (SVG element - behindground) */
+/* top - first scene (SVG element - ground) */
+/* top - first scene (SVG element - fake couple) */
+/*---- top - instagram ---*/
+/*---- top - concept ---*/
+/*---- top - topic & campaign slider ---*/
+/*---- top - instagram ---*/
+/*---- top - concept ---*/
+/*---- top - topic & campaign slider ---*/
+/*---- top - topic item's feature ---*/
+/*---- top - recommended ---*/
+/*---- top - blog ---*/
+/*---- top - franchise ---*/
+/*----------------------------------------{ inner - common }---*/
+/*----------------------------------------{ inner - about }---*/
+/*----------------------------------------{ inner - allstars }---*/
+/*----------------------------------------{ inner - blog }---*/
+/*----------------------------------------{ inner - journey }---*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------{ common - nav after open / after close }---*/
+.nav_is_open #the-nav,
+.nav_switch_open,
+.nav_is_open .nav_switch_close {
+  pointer-events: all;
+}
+.nav_is_open #the-nav,
+.nav_switch_open {
+  opacity: 1;
+}
+#the-nav,
+.nav_is_open .nav_switch_open {
+  pointer-events: none;
+  opacity: 0;
+}
+#the-nav,
+.the_nav::before,
+.the_nav::after,
+.nav_switch_open,
+.switch_close_icon .the_close_icon,
+.aside_to_online_store,
+.aside_sns_group {
+  -webkit-transition: .125s var(--img-trasition-func);
+  -o-transition: .125s var(--img-trasition-func);
+  transition: .125s var(--img-trasition-func);
+}
+.the_nav::before,
+.the_nav::after {
+  -webkit-transition: .525s var(--img-trasition-func);
+  -o-transition: .525s var(--img-trasition-func);
+  transition: .525s var(--img-trasition-func);
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+}
+.nav_is_open .the_nav::before,
+.nav_is_open .the_nav::after {
+  -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.nav_is_open #the-nav,
+.nav_is_open .nav_switch_open,
+.nav_is_open .aside_to_online_store,
+.nav_is_open .aside_sns_group {
+  -webkit-transition: .525s var(--img-trasition-func);
+  -o-transition: .525s var(--img-trasition-func);
+  transition: .525s var(--img-trasition-func);
+}
+.switch_close_icon .the_close_icon {
+  opacity: 0;
+  -webkit-transform: translate3d(-2vw, 0, 0);
+          transform: translate3d(-2vw, 0, 0);
+}
+.nav_is_open .switch_close_icon .the_close_icon {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: .625s cubic-bezier(.8,.35,0,2);
+  -o-transition: .625s cubic-bezier(.8,.35,0,2);
+  transition: .625s cubic-bezier(.8,.35,0,2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

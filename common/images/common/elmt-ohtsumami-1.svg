@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="the-element-ohtsumami-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EE795E;}
+	.st1{fill:#231815;}
+</style>
+<g>
+	<circle class="st0" cx="6.5" cy="6.5" r="5.8"/>
+	<path class="st1" d="M6.5,13C2.9,13,0,10.1,0,6.5S2.9,0,6.5,0S13,2.9,13,6.5S10.1,13,6.5,13z M6.5,1.4c-2.8,0-5.1,2.3-5.1,5.1
+		s2.3,5.1,5.1,5.1c2.8,0,5.1-2.3,5.1-5.1S9.3,1.4,6.5,1.4z"/>
+</g>
+</svg>
