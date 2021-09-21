@@ -6,7 +6,8 @@ if (!function_exists('my_header_scripts')) {
   {
     if (!is_admin()) {
 
-//      wp_deregister_script('jquery'); // デフォルトjQueryの差し替え
+      wp_deregister_script('jquery'); // デフォルトjQueryの差し替え
+      wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js', array(), null, false);
       wp_enqueue_script('imagesloadedjs', 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js', array(), null, true);
       wp_enqueue_script('slick', get_stylesheet_directory_uri() . '/common/js/libs/slick/slick.min.js', array(), null, true);
       wp_enqueue_script('easing', get_stylesheet_directory_uri() . '/common/js/libs/easing.js', array(), null, true);
