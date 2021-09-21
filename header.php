@@ -59,7 +59,6 @@
     if (/*@cc_on!@*/true) {
       document.documentElement.className += ' ie' + document.documentMode;
     }
-    var $ = jQuery;
   </script>
   <!--<![endif]-->
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/common/js/libs/modernizr-2.6.2.min.js" defer></script>
