@@ -7,10 +7,10 @@ if (!function_exists('my_header_scripts')) {
     if (!is_admin()) {
 
 //      wp_deregister_script('jquery'); // デフォルトjQueryの差し替え
-      wp_enqueue_script('imagesloaded', 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js', array(), null, true);
+      wp_enqueue_script('imagesloadedjs', 'https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js', array(), null, true);
       wp_enqueue_script('slick', get_stylesheet_directory_uri() . '/common/js/libs/slick/slick.min.js', array(), null, true);
       wp_enqueue_script('easing', get_stylesheet_directory_uri() . '/common/js/libs/easing.js', array(), null, true);
-      wp_enqueue_script('common', get_stylesheet_directory_uri() . '/common/js/common.js', array(), null, true);
+      wp_enqueue_script('commonjs', get_stylesheet_directory_uri() . '/common/js/common.js', array(), null, true);
 
 //      wp_enqueue_style( 'googlefont', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap', array(), null );
       wp_enqueue_style( 'slick', get_stylesheet_directory_uri() . '/common/js/libs/slick/slick.css', array(), null );
