@@ -51,6 +51,10 @@ if( function_exists('acf_add_options_page') ) {
   ));
 }
 
+register_nav_menus(array(
+  'global'    => 'グローバルナビゲーション',
+  'footer'    => 'フッターナビゲーション',
+));
 
 /*** カテゴリーチェックボックス移動無効化 ***/
 function keep_admin_posts_category_order( $args, $post_id = null ) {
