@@ -315,21 +315,23 @@
     <div id="top-instagram">
       <p class="cmn_sub_sec_caption font_en_roboto f__24 f__ltr__5 f__ltr__5__center f__wt__5">instagram</p>
       <div class="top_insta_container w_max1024 w960_in_1024">
-        <a href="#" class="top_insta_link cmn_link_unit" target="_blank">
-          <img src="<?php echo get_template_directory_uri(); ?>/common/images/top/insta-1.jpg" alt="">
-        </a>
-        <a href="#" class="top_insta_link cmn_link_unit" target="_blank">
-          <img src="<?php echo get_template_directory_uri(); ?>/common/images/top/insta-2.jpg" alt="">
-        </a>
-        <a href="#" class="top_insta_link cmn_link_unit" target="_blank">
-          <img src="<?php echo get_template_directory_uri(); ?>/common/images/top/insta-1.jpg" alt="">
-        </a>
-        <a href="#" class="top_insta_link cmn_link_unit" target="_blank">
-          <img src="<?php echo get_template_directory_uri(); ?>/common/images/top/insta-2.jpg" alt="">
-        </a>
-        <a href="#" class="top_insta_link cmn_link_unit" target="_blank">
-          <img src="<?php echo get_template_directory_uri(); ?>/common/images/top/insta-1.jpg" alt="">
-        </a>
+<!--        <a href="#" class="top_insta_link cmn_link_unit" target="_blank">-->
+<!--          <img src="--><?php //echo get_template_directory_uri(); ?><!--/common/images/top/insta-1.jpg" alt="">-->
+<!--        </a>-->
+<!--        <a href="#" class="top_insta_link cmn_link_unit" target="_blank">-->
+<!--          <img src="--><?php //echo get_template_directory_uri(); ?><!--/common/images/top/insta-2.jpg" alt="">-->
+<!--        </a>-->
+<!--        <a href="#" class="top_insta_link cmn_link_unit" target="_blank">-->
+<!--          <img src="--><?php //echo get_template_directory_uri(); ?><!--/common/images/top/insta-1.jpg" alt="">-->
+<!--        </a>-->
+<!--        <a href="#" class="top_insta_link cmn_link_unit" target="_blank">-->
+<!--          <img src="--><?php //echo get_template_directory_uri(); ?><!--/common/images/top/insta-2.jpg" alt="">-->
+<!--        </a>-->
+<!--        <a href="#" class="top_insta_link cmn_link_unit" target="_blank">-->
+<!--          <img src="--><?php //echo get_template_directory_uri(); ?><!--/common/images/top/insta-1.jpg" alt="">-->
+<!--        </a>-->
+        <?php do_shortcode("[instagram-feed]"); ?>
+
       </div>
     </div>
     <div class="top_concept">

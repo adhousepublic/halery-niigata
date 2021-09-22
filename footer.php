@@ -43,26 +43,33 @@
       </div>
     </div>
     <div class="footer_bot">
-      <ul class="footer_link_group">
-        <li class="footer_link_list footer_link_list_1">
-          <a href="<?php echo esc_url( home_url() ); ?>/about" class="footer_link_and_link f__wt__5 cmn_link_unit mover_link">ハレリーについて</a>
-        </li>
-        <li class="footer_link_list footer_link_list_2">
-          <a href="<?php echo esc_url( home_url() ); ?>/allstars" class="footer_link_and_link f__wt__5 cmn_link_unit mover_link">全国もぐり菓子オールスターズ</a>
-        </li>
-        <li class="footer_link_list footer_link_list_3">
-          <a href="https://halery.shopselect.net" class="footer_link_and_link f__wt__5 cmn_link_unit" target="_blank">オンラインストア</a>
-        </li>
-        <li class="footer_link_list footer_link_list_4">
-          <a href="<?php echo esc_url( home_url() ); ?>/snack_journeys" class="footer_link_and_link f__wt__5 cmn_link_unit mover_link">全国もぐり菓子発掘の旅</a>
-        </li>
-        <li class="footer_link_list footer_link_list_5">
-          <a href="<?php echo esc_url( home_url() ); ?>/blog" class="footer_link_and_link f__wt__5 cmn_link_unit mover_link">お知らせ・ブログ</a>
-        </li>
-        <li class="footer_link_list footer_link_list_6">
-          <a href="https://thebase.in/inquiry/halery-shopselect-net" class="footer_link_and_link f__wt__5 cmn_link_unit" target="_blank">お問い合わせ</a>
-        </li>
-      </ul>
+      <?php wp_nav_menu( array(
+        'theme_location' => 'footer',
+        'container'      => false,
+        'menu_class' => 'footer_link_group',
+        'add_li_class'  => 'footer_link_list',
+        'add_a_class'  => 'footer_link_and_link f__wt__5 cmn_link_unit',
+      )); ?>
+<!--      <ul class="footer_link_group">-->
+<!--        <li class="footer_link_list footer_link_list_1">-->
+<!--          <a href="--><?php //echo esc_url( home_url() ); ?><!--/about" class="footer_link_and_link f__wt__5 cmn_link_unit mover_link">ハレリーについて</a>-->
+<!--        </li>-->
+<!--        <li class="footer_link_list footer_link_list_2">-->
+<!--          <a href="--><?php //echo esc_url( home_url() ); ?><!--/allstars" class="footer_link_and_link f__wt__5 cmn_link_unit mover_link">全国もぐり菓子オールスターズ</a>-->
+<!--        </li>-->
+<!--        <li class="footer_link_list footer_link_list_3">-->
+<!--          <a href="https://halery.shopselect.net" class="footer_link_and_link f__wt__5 cmn_link_unit" target="_blank">オンラインストア</a>-->
+<!--        </li>-->
+<!--        <li class="footer_link_list footer_link_list_4">-->
+<!--          <a href="--><?php //echo esc_url( home_url() ); ?><!--/snack_journeys" class="footer_link_and_link f__wt__5 cmn_link_unit mover_link">全国もぐり菓子発掘の旅</a>-->
+<!--        </li>-->
+<!--        <li class="footer_link_list footer_link_list_5">-->
+<!--          <a href="--><?php //echo esc_url( home_url() ); ?><!--/blog" class="footer_link_and_link f__wt__5 cmn_link_unit mover_link">お知らせ・ブログ</a>-->
+<!--        </li>-->
+<!--        <li class="footer_link_list footer_link_list_6">-->
+<!--          <a href="https://thebase.in/inquiry/halery-shopselect-net" class="footer_link_and_link f__wt__5 cmn_link_unit" target="_blank">お問い合わせ</a>-->
+<!--        </li>-->
+<!--      </ul>-->
     </div>
   </div>
   <address class="the_copyrights font_en_roboto f__ltr__1 f__ltr__1__center">© 2021 Harelly All rights reserved.</address>
