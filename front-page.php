@@ -375,7 +375,7 @@ if ( have_posts() ) :
       <?php
       while(have_rows('bnr_slider')): the_row();
         $slide_id = get_sub_field('bnr');
-        $slide = wp_get_attachment_image_src($slide_id);
+        $slide = wp_get_attachment_image_src($slide_id, 'full');
         $slide_url = $slide[0];
         $bnr_link = get_sub_field('link');
         $bnr_newtab = get_sub_field('newtab');
@@ -484,7 +484,7 @@ if ( have_posts() ) :
           <?php
           while(have_rows('bnr_list')): the_row();
             $slide_id = get_sub_field('bnr');
-            $slide = wp_get_attachment_image_src($slide_id);
+            $slide = wp_get_attachment_image_src($slide_id, 'full');
             $slide_url = $slide[0];
             $bnr_link = get_sub_field('link');
             $bnr_newtab = get_sub_field('newtab');
