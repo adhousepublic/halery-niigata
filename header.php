@@ -144,7 +144,7 @@
           'container'      => false,
           'menu_class' => 'm_nav_link_group',
           'add_li_class'  => 'm_nav_link_list',
-          'add_a_class'  => 'm_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit',
+          'add_a_class'  => 'm_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit mover_link',
         )); ?>
 <!--        <ul class="m_nav_link_group">-->
 <!--          <li class="m_nav_link_list">-->

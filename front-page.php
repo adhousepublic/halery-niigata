@@ -384,7 +384,7 @@ if ( have_posts() ) :
         if(!$bnr_hidden) :
       ?>
         <li class="top_campaign_slide_list">
-          <a href="<?php echo esc_url($bnr_link); ?>" class="top_campaign_slide_link cmn_link_unit mover_link" <?php if($bnr_newtab){ ?>target="_blank" rel="nofollow noopener"<?php } ?>>
+          <a href="<?php echo esc_url($bnr_link); ?>" class="top_campaign_slide_link cmn_link_unit <?php if(!$bnr_newtab){ ?>mover_link<?php } ?>" <?php if($bnr_newtab){ ?>target="_blank" rel="nofollow noopener"<?php } ?>>
             <img src="<?php echo esc_url($slide_url); ?>" class="top_campaign_slide_img" alt="">
           </a>
         </li>
@@ -493,7 +493,7 @@ if ( have_posts() ) :
             if(!$bnr_hidden) :
               ?>
               <li class="top_recommend_bnr_list">
-                <a href="<?php echo esc_url($bnr_link); ?>" class="top_recommend_bnr_link mover_link cmn_link_unit" <?php if($bnr_newtab){ ?>target="_blank" rel="nofollow noopener"<?php } ?>>
+                <a href="<?php echo esc_url($bnr_link); ?>" class="top_recommend_bnr_link cmn_link_unit <?php if(!$bnr_newtab){ ?>mover_link<?php } ?>" <?php if($bnr_newtab){ ?>target="_blank" rel="nofollow noopener"<?php } ?>>
                   <img src="<?php echo esc_url($slide_url); ?>" alt="">
                 </a>
               </li>
@@ -512,59 +512,81 @@ if ( have_posts() ) :
           <img src="<?php echo get_template_directory_uri(); ?>/common/images/top/blog-caption.png" class="d_img" alt="">
         </h2>
         <div class="top_blog_group">
-          <section class="top_blog_latest">
-            <a href="/blog" class="top_blog_link top_blog_latest_link mover_link">
-              <h3 class="top_blog_title top_blog_latest_title">
-                <span class="top_blog_title_text top_blog_latest_title_text f__16 f__wt__5 f__ln__30">お知らせのタイトルをここにお知らせのタイトルをここに、お知らせのタイトルをここに</span>
-              </h3>
-              <span class="top_blog_thumb">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/blog/the_thumbs.jpg" alt="">
+          <?php
+          $args = array(
+            'post_type' => 'post',
+            'posts_per_page' => 1,
+          );
+
+          $the_query = new WP_Query( $args );
+
+          // ループ
+          if ( $the_query->have_posts() ) : ?>
+            <?php
+            while ( $the_query->have_posts() ) : $the_query->the_post();
+            ?>
+            <?php
+            if ( has_post_thumbnail() ) {
+              $attach_id = get_post_thumbnail_id($post->ID, "thumbnail");
+              $image = wp_get_attachment_image_src($attach_id);
+              $image_url = $image[0];
+            }else{
+              $image_url = get_template_directory_uri() . '/common/images/blog/the_thumbs.jpg';
+            }
+            ?>
+              <section class="top_blog_latest">
+                <a href="<?php the_permalink(); ?>" class="top_blog_link top_blog_latest_link mover_link">
+                  <h3 class="top_blog_title top_blog_latest_title">
+                    <span class="top_blog_title_text top_blog_latest_title_text f__16 f__wt__5 f__ln__30"><?php the_title(); ?></span>
+                  </h3>
+                  <span class="top_blog_thumb">
+                                <img src="<?php echo esc_url($image_url); ?>" alt="">
                             </span>
-              <time class="top_blog_date top_blog_latest_date font_en_roboto f__wt__5 f__ltr__1 f__ltr__1__center">2021.10.01</time>
-            </a>
-          </section>
+                  <time class="top_blog_date top_blog_latest_date font_en_roboto f__wt__5 f__ltr__1 f__ltr__1__center"><?php echo get_the_date('Y.n.d'); ?></time>
+                </a>
+              </section>
+
+            <?php
+            endwhile;
+          endif;
+
+          // 投稿データをリセット
+          wp_reset_postdata();
+          ?>
+
+          <?php
+          $args = array(
+            'post_type' => 'post',
+            'posts_per_page' => 5,
+            'offset' => 1,
+          );
+
+          $the_query = new WP_Query( $args );
+
+          // ループ
+          if ( $the_query->have_posts() ) : ?>
           <ul class="top_blog_all">
-            <li class="top_blog_list">
-              <a href="/blog" class="top_blog_link top_blog_all_link mover_link">
-                <time class="top_blog_date top_blog_all_date font_en_roboto">2021.10.01</time>
-                <h3 class="top_blog_title top_blog_all_title f__16 f__wt__5">
-                  <span class="top_blog_title_text top_blog_all_title_text">お知らせのタイトルをここにお知らせのタイトルをここに、お知らせのタイトルをここに</span>
-                </h3>
-              </a>
-            </li>
-            <li class="top_blog_list">
-              <a href="/blog" class="top_blog_link top_blog_all_link mover_link">
-                <time class="top_blog_date top_blog_all_date font_en_roboto">2021.10.01</time>
-                <h3 class="top_blog_title top_blog_all_title f__16 f__wt__5">
-                  <span class="top_blog_title_text top_blog_all_title_text">お知らせのタイトルをここにお知らせのタイトルをここに、お知らせのタイトルをここに</span>
-                </h3>
-              </a>
-            </li>
-            <li class="top_blog_list">
-              <a href="/blog" class="top_blog_link top_blog_all_link mover_link">
-                <time class="top_blog_date top_blog_all_date font_en_roboto">2021.10.01</time>
-                <h3 class="top_blog_title top_blog_all_title f__16 f__wt__5">
-                  <span class="top_blog_title_text top_blog_all_title_text">お知らせのタイトルをここにお知らせのタイトルをここに、お知らせのタイトルをここに</span>
-                </h3>
-              </a>
-            </li>
-            <li class="top_blog_list">
-              <a href="/blog" class="top_blog_link top_blog_all_link mover_link">
-                <time class="top_blog_date top_blog_all_date font_en_roboto">2021.10.01</time>
-                <h3 class="top_blog_title top_blog_all_title f__16 f__wt__5">
-                  <span class="top_blog_title_text top_blog_all_title_text">お知らせのタイトルをここにお知らせのタイトルをここに、お知らせのタイトルをここに</span>
-                </h3>
-              </a>
-            </li>
-            <li class="top_blog_list">
-              <a href="/blog" class="top_blog_link top_blog_all_link mover_link">
-                <time class="top_blog_date top_blog_all_date font_en_roboto">2021.10.01</time>
-                <h3 class="top_blog_title top_blog_all_title f__16 f__wt__5">
-                  <span class="top_blog_title_text top_blog_all_title_text">お知らせのタイトルをここにお知らせのタイトルをここに、お知らせのタイトルをここに</span>
-                </h3>
-              </a>
-            </li>
+          <?php
+            while ( $the_query->have_posts() ) : $the_query->the_post();
+            ?>
+              <li class="top_blog_list">
+                <a href="<?php the_permalink(); ?>" class="top_blog_link top_blog_all_link mover_link">
+                  <time class="top_blog_date top_blog_all_date font_en_roboto"><?php echo get_the_date('Y.n.d'); ?></time>
+                  <h3 class="top_blog_title top_blog_all_title f__16 f__wt__5">
+                    <span class="top_blog_title_text top_blog_all_title_text"><?php the_title(); ?></span>
+                  </h3>
+                </a>
+              </li>
+
+            <?php endwhile; ?>
           </ul>
+
+          <?php
+          endif;
+
+          // 投稿データをリセット
+          wp_reset_postdata();
+          ?>
           <a href="/blog" class="top_blog_to_all_link f__18 f__ltr__1 f__wt__5">一覧へ</a>
         </div>
       </div>
@@ -575,108 +597,46 @@ if ( have_posts() ) :
           <span class="top_franchise_caption_text d_text">取り扱い店舗</span>
           <img src="<?php echo get_template_directory_uri(); ?>/common/images/top/franchise-caption.png" class="d_img" alt="">
         </h2>
+        <?php
+        $args = array(
+          'post_type' => 'clients',
+          'posts_per_page' => -1,
+        );
+
+        $the_query = new WP_Query( $args );
+
+        // ループ
+        if ( $the_query->have_posts() ) : ?>
         <ul class="top_franchise_group f__18 f__wt__5">
-          <li class="top_franchise_list">
-            <div class="top_franchise_list_wrap">
-              <p class="top_franchise_shop_info">
-                <span class="top_franchise_shop_name">店舗名が入ります</span>
-                <span class="top_franchise_shop_location"><q class="quotes_typ_5">〇〇市〇〇区</q></span>
-              </p>
-              <a href="#" class="top_franchise_shop_link" target="_blank">詳細</a>
-              <a href="#" class="top_franchise_shop_map" target="_blank">map</a>
-            </div>
-          </li>
-          <li class="top_franchise_list">
-            <div class="top_franchise_list_wrap">
-              <p class="top_franchise_shop_info">
-                <span class="top_franchise_shop_name">店舗名が入ります</span>
-                <span class="top_franchise_shop_location"><q class="quotes_typ_5">〇〇市〇〇区</q></span>
-              </p>
-              <a href="#" class="top_franchise_shop_link" target="_blank">詳細</a>
-              <a href="#" class="top_franchise_shop_map" target="_blank">map</a>
-            </div>
-          </li>
-          <li class="top_franchise_list">
-            <div class="top_franchise_list_wrap">
-              <p class="top_franchise_shop_info">
-                <span class="top_franchise_shop_name">店舗名が入ります</span>
-                <span class="top_franchise_shop_location"><q class="quotes_typ_5">〇〇市〇〇区</q></span>
-              </p>
-              <a href="#" class="top_franchise_shop_link" target="_blank">詳細</a>
-              <a href="#" class="top_franchise_shop_map" target="_blank">map</a>
-            </div>
-          </li>
-          <li class="top_franchise_list">
-            <div class="top_franchise_list_wrap">
-              <p class="top_franchise_shop_info">
-                <span class="top_franchise_shop_name">店舗名が入ります</span>
-                <span class="top_franchise_shop_location"><q class="quotes_typ_5">〇〇市〇〇区</q></span>
-              </p>
-              <a href="#" class="top_franchise_shop_link" target="_blank">詳細</a>
-              <a href="#" class="top_franchise_shop_map" target="_blank">map</a>
-            </div>
-          </li>
-          <li class="top_franchise_list">
-            <div class="top_franchise_list_wrap">
-              <p class="top_franchise_shop_info">
-                <span class="top_franchise_shop_name">店舗名が入ります</span>
-                <span class="top_franchise_shop_location"><q class="quotes_typ_5">〇〇市〇〇区</q></span>
-              </p>
-              <a href="#" class="top_franchise_shop_link" target="_blank">詳細</a>
-              <a href="#" class="top_franchise_shop_map" target="_blank">map</a>
-            </div>
-          </li>
-          <li class="top_franchise_list">
-            <div class="top_franchise_list_wrap">
-              <p class="top_franchise_shop_info">
-                <span class="top_franchise_shop_name">店舗名が入ります</span>
-                <span class="top_franchise_shop_location"><q class="quotes_typ_5">〇〇市〇〇区</q></span>
-              </p>
-              <a href="#" class="top_franchise_shop_link" target="_blank">詳細</a>
-              <a href="#" class="top_franchise_shop_map" target="_blank">map</a>
-            </div>
-          </li>
-          <li class="top_franchise_list">
-            <div class="top_franchise_list_wrap">
-              <p class="top_franchise_shop_info">
-                <span class="top_franchise_shop_name">店舗名が入ります</span>
-                <span class="top_franchise_shop_location"><q class="quotes_typ_5">〇〇市〇〇区</q></span>
-              </p>
-              <a href="#" class="top_franchise_shop_link" target="_blank">詳細</a>
-              <a href="#" class="top_franchise_shop_map" target="_blank">map</a>
-            </div>
-          </li>
-          <li class="top_franchise_list">
-            <div class="top_franchise_list_wrap">
-              <p class="top_franchise_shop_info">
-                <span class="top_franchise_shop_name">店舗名が入ります</span>
-                <span class="top_franchise_shop_location"><q class="quotes_typ_5">〇〇市〇〇区</q></span>
-              </p>
-              <a href="#" class="top_franchise_shop_link" target="_blank">詳細</a>
-              <a href="#" class="top_franchise_shop_map" target="_blank">map</a>
-            </div>
-          </li>
-          <li class="top_franchise_list">
-            <div class="top_franchise_list_wrap">
-              <p class="top_franchise_shop_info">
-                <span class="top_franchise_shop_name">店舗名が入ります</span>
-                <span class="top_franchise_shop_location"><q class="quotes_typ_5">〇〇市〇〇区</q></span>
-              </p>
-              <a href="#" class="top_franchise_shop_link" target="_blank">詳細</a>
-              <a href="#" class="top_franchise_shop_map" target="_blank">map</a>
-            </div>
-          </li>
-          <li class="top_franchise_list">
-            <div class="top_franchise_list_wrap">
-              <p class="top_franchise_shop_info">
-                <span class="top_franchise_shop_name">店舗名が入ります</span>
-                <span class="top_franchise_shop_location"><q class="quotes_typ_5">〇〇市〇〇区</q></span>
-              </p>
-              <a href="#" class="top_franchise_shop_link" target="_blank">詳細</a>
-              <a href="#" class="top_franchise_shop_map" target="_blank">map</a>
-            </div>
-          </li>
+        <?php
+          while ( $the_query->have_posts() ) : $the_query->the_post();
+          $clients_link = get_field('link_url');
+          $clients_address = get_field('address');
+          $clients_map = get_field('googlemap');
+          ?>
+            <li class="top_franchise_list">
+              <div class="top_franchise_list_wrap">
+                <p class="top_franchise_shop_info">
+                  <span class="top_franchise_shop_name"><?php the_title(); ?></span>
+                  <span class="top_franchise_shop_location"><q class="quotes_typ_5"><?php echo esc_html($clients_address); ?></q></span>
+                </p>
+                <?php if($clients_link) { ?>
+                  <a href="<?php echo esc_url($clients_link); ?>" class="top_franchise_shop_link" target="_blank">詳細</a>
+                <?php } ?>
+                <?php if($clients_map) { ?>
+                  <a href="<?php echo esc_url($clients_map); ?>" class="top_franchise_shop_map" target="_blank">map</a>
+                <?php } ?>
+              </div>
+            </li>
+          <?php endwhile; ?>
         </ul>
+
+        <?php
+        endif;
+
+        // 投稿データをリセット
+        wp_reset_postdata();
+        ?>
       </div>
       <div class="top_franchise_notice w_max1366">
                 <span class="top_franchise_uruma">

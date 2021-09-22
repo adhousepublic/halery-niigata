@@ -48,7 +48,7 @@
         'container'      => false,
         'menu_class' => 'footer_link_group',
         'add_li_class'  => 'footer_link_list',
-        'add_a_class'  => 'footer_link_and_link f__wt__5 cmn_link_unit',
+        'add_a_class'  => 'footer_link_and_link f__wt__5 cmn_link_unit mover_link',
       )); ?>
 <!--      <ul class="footer_link_group">-->
 <!--        <li class="footer_link_list footer_link_list_1">-->
