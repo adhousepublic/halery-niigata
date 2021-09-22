@@ -64,7 +64,7 @@
   <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/common/js/libs/modernizr-2.6.2.min.js" defer></script>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php if(is_front_page()) { ?>id="page-top"<?php } ?> <?php body_class(); ?>>
 
 <div class="wrapper the_page_mover nav_is_close">
   <header id="the-header" class="">

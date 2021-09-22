@@ -40,7 +40,16 @@ if (!function_exists('my_pre_get_posts')) {
 }
 
 
-
+/*【管理画面】ACF Options Page の設定 */
+if( function_exists('acf_add_options_page') ) {
+  acf_add_options_page(array(
+    'page_title' => '基本設定', // ページタイトル
+    'menu_title' => '基本設定', // メニュータイトル
+    'menu_slug' => 'theme-general-settings', // メニュースラッグ
+    'capability' => 'edit_posts',
+    'redirect' => false
+  ));
+}
 
 
 /*** カテゴリーチェックボックス移動無効化 ***/
