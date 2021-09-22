@@ -139,26 +139,33 @@
                 </span>
       </h2>
       <div class="m_nav_content">
-        <ul class="m_nav_link_group">
-          <li class="m_nav_link_list">
-            <a href="<?php echo esc_url( home_url() ); ?>/about" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit mover_link">ハレリーについて</a>
-          </li>
-          <li class="m_nav_link_list">
-            <a href="<?php echo esc_url( home_url() ); ?>/allstars" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit mover_link">全国もぐり菓子オールスター</a>
-          </li>
-          <li class="m_nav_link_list">
-            <a href="<?php echo esc_url( home_url() ); ?>/snack_journeys" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit mover_link">全国もぐり菓子発掘の旅</a>
-          </li>
-          <li class="m_nav_link_list">
-            <a href="<?php echo esc_url( home_url() ); ?>/blog" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit mover_link">お知らせ・ブログ</a>
-          </li>
-          <li class="m_nav_link_list">
-            <a href="https://halery.shopselect.net" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit" target="_blank">オンラインストア</a>
-          </li>
-          <li class="m_nav_link_list">
-            <a href="https://thebase.in/inquiry/halery-shopselect-net" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit" target="_blank">お問い合わせ</a>
-          </li>
-        </ul>
+        <?php wp_nav_menu( array(
+          'theme_location' => 'global',
+          'container'      => false,
+          'menu_class' => 'm_nav_link_group',
+          'add_li_class'  => 'm_nav_link_list',
+          'add_a_class'  => 'm_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit',
+        )); ?>
+<!--        <ul class="m_nav_link_group">-->
+<!--          <li class="m_nav_link_list">-->
+<!--            <a href="--><?php //echo esc_url( home_url() ); ?><!--/about" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit mover_link">ハレリーについて</a>-->
+<!--          </li>-->
+<!--          <li class="m_nav_link_list">-->
+<!--            <a href="--><?php //echo esc_url( home_url() ); ?><!--/allstars" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit mover_link">全国もぐり菓子オールスター</a>-->
+<!--          </li>-->
+<!--          <li class="m_nav_link_list">-->
+<!--            <a href="--><?php //echo esc_url( home_url() ); ?><!--/snack_journeys" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit mover_link">全国もぐり菓子発掘の旅</a>-->
+<!--          </li>-->
+<!--          <li class="m_nav_link_list">-->
+<!--            <a href="--><?php //echo esc_url( home_url() ); ?><!--/blog" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit mover_link">お知らせ・ブログ</a>-->
+<!--          </li>-->
+<!--          <li class="m_nav_link_list">-->
+<!--            <a href="https://halery.shopselect.net" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit" target="_blank">オンラインストア</a>-->
+<!--          </li>-->
+<!--          <li class="m_nav_link_list">-->
+<!--            <a href="https://thebase.in/inquiry/halery-shopselect-net" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit" target="_blank">お問い合わせ</a>-->
+<!--          </li>-->
+<!--        </ul>-->
         <div class="elmt_uruma elmt_uruma_in_nav">
           <div class="elmt_uruma_wrap">
                         <span class="elmt_uruma_lefthand">
