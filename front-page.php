@@ -1,5 +1,9 @@
 <?php get_header();
 ?>
+<?php
+if ( have_posts() ) :
+  while ( have_posts() ) : the_post();
+    ?>
   <main id="main-content">
     <div id="top-first-scene">
       <div class="top_first_scene">
@@ -315,6 +319,7 @@
     <div id="top-instagram">
       <p class="cmn_sub_sec_caption font_en_roboto f__24 f__ltr__5 f__ltr__5__center f__wt__5">instagram</p>
       <div class="top_insta_container w_max1024 w960_in_1024">
+        <?php echo do_shortcode("[instagram-feed]"); ?>
 <!--        <a href="#" class="top_insta_link cmn_link_unit" target="_blank">-->
 <!--          <img src="--><?php //echo get_template_directory_uri(); ?><!--/common/images/top/insta-1.jpg" alt="">-->
 <!--        </a>-->
@@ -330,7 +335,6 @@
 <!--        <a href="#" class="top_insta_link cmn_link_unit" target="_blank">-->
 <!--          <img src="--><?php //echo get_template_directory_uri(); ?><!--/common/images/top/insta-1.jpg" alt="">-->
 <!--        </a>-->
-        <?php do_shortcode("[instagram-feed]"); ?>
 
       </div>
     </div>
@@ -364,21 +368,34 @@
         <img src="<?php echo get_template_directory_uri(); ?>/common/images/top/concept-bg.png" class="top_concept_bgimage_img" alt="">
       </div>
     </div>
+    <?php if(have_rows('bnr_slider')): ?>
     <div class="top_campaign_slider">
       <p class="cmn_sub_sec_caption font_en_roboto f__24 f__ltr__8 f__ltr__8__center f__wt__5">topics</p>
       <ul class="top_the_campaign_slide top_slide_of_campaign">
+      <?php
+      while(have_rows('bnr_slider')): the_row();
+        $slide_id = get_sub_field('bnr');
+        $slide = wp_get_attachment_image_src($slide_id);
+        $slide_url = $slide[0];
+        $bnr_link = get_sub_field('link');
+        $bnr_newtab = get_sub_field('newtab');
+        $bnr_hidden = get_sub_field('hidden');
+
+        if(!$bnr_hidden) :
+      ?>
         <li class="top_campaign_slide_list">
-          <a href="#" class="top_campaign_slide_link cmn_link_unit mover_link">
-            <img src="<?php echo get_template_directory_uri(); ?>/common/images/top/campaign-bnr-2.jpg" class="top_campaign_slide_img" alt="">
+          <a href="<?php echo esc_url($bnr_link); ?>" class="top_campaign_slide_link cmn_link_unit mover_link" <?php if($bnr_newtab){ ?>target="_blank" rel="nofollow noopener"<?php } ?>>
+            <img src="<?php echo esc_url($slide_url); ?>" class="top_campaign_slide_img" alt="">
           </a>
         </li>
-        <li class="top_campaign_slide_list">
-          <a href="#" class="top_campaign_slide_link cmn_link_unit mover_link">
-            <img src="<?php echo get_template_directory_uri(); ?>/common/images/top/campaign-bnr-1.jpg" class="top_campaign_slide_img" alt="">
-          </a>
-        </li>
+      <?php
+        endif;
+      endwhile;
+      ?>
       </ul>
     </div>
+    <?php endif; ?>
+
     <div class="top_feature">
       <section class="top_feature_content w_max1366">
         <h2 class="top_feature_caption decort_text">
@@ -461,20 +478,32 @@
         </ul>
       </section>
     </div>
-    <div class="top_recommended">
-      <ul class="top_recommend_bnrs w_max1024">
-        <li class="top_recommend_bnr_list">
-          <a href="/allstars" class="top_recommend_bnr_link mover_link cmn_link_unit">
-            <img src="<?php echo get_template_directory_uri(); ?>/common/images/top/bnr-snackallstars-1.jpg" alt="全国もぐり菓子オールスターズ">
-          </a>
-        </li>
-        <li class="top_recommend_bnr_list">
-          <a href="/snack_journeys" class="top_recommend_bnr_link mover_link cmn_link_unit">
-            <img src="<?php echo get_template_directory_uri(); ?>/common/images/top/bnr-snackjourneys-1.jpg" alt="全国もぐり菓子発掘の旅">
-          </a>
-        </li>
-      </ul>
-    </div>
+    <?php if(have_rows('bnr_list')): ?>
+      <div class="top_recommended">
+        <ul class="top_recommend_bnrs w_max1024">
+          <?php
+          while(have_rows('bnr_list')): the_row();
+            $slide_id = get_sub_field('bnr');
+            $slide = wp_get_attachment_image_src($slide_id);
+            $slide_url = $slide[0];
+            $bnr_link = get_sub_field('link');
+            $bnr_newtab = get_sub_field('newtab');
+            $bnr_hidden = get_sub_field('hidden');
+
+            if(!$bnr_hidden) :
+              ?>
+              <li class="top_recommend_bnr_list">
+                <a href="<?php echo esc_url($bnr_link); ?>" class="top_recommend_bnr_link mover_link cmn_link_unit" <?php if($bnr_newtab){ ?>target="_blank" rel="nofollow noopener"<?php } ?>>
+                  <img src="<?php echo esc_url($slide_url); ?>" alt="">
+                </a>
+              </li>
+            <?php
+            endif;
+          endwhile;
+          ?>
+        </ul>
+      </div>
+    <?php endif; ?>
     <div class="top_blog">
       <p class="cmn_sub_sec_caption font_en_roboto f__24 f__ltr__8 f__ltr__8__center f__wt__5">news</p>
       <div class="top_blog_content w_max1366">
@@ -692,5 +721,8 @@
     </div>
   </main>
   <!-- //main content -->
+  <?php
+  endwhile;
+endif; ?>
 <?php
 get_footer();
