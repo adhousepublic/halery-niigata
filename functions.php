@@ -47,34 +47,13 @@ if( function_exists('acf_add_options_page') ) {
     'menu_title' => '基本設定', // メニュータイトル
     'menu_slug' => 'theme-general-settings', // メニュースラッグ
     'capability' => 'edit_posts',
+    'position' => 3,
+    'update_button' => __('更新', 'acf'),
+    'updated_message' => __("設定を更新しました", 'acf'),
     'redirect' => false
   ));
 }
 
-register_nav_menus(array(
-  'global'    => 'グローバルナビゲーション',
-  'footer'    => 'フッターナビゲーション',
-));
-
-// wp_nav_menuのliにclass追加
-function add_additional_class_on_li($classes, $item, $args)
-{
-  if (isset($args->add_li_class)) {
-    $classes['class'] = $args->add_li_class;
-  }
-  return $classes;
-}
-add_filter('nav_menu_css_class', 'add_additional_class_on_li', 1, 3);
-
-// wp_nav_menuのaにclass追加
-function add_additional_class_on_a($classes, $item, $args)
-{
-  if (isset($args->add_li_class)) {
-    $classes['class'] = $args->add_a_class;
-  }
-  return $classes;
-}
-add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
 
 /*** カテゴリーチェックボックス移動無効化 ***/
 function keep_admin_posts_category_order( $args, $post_id = null ) {
