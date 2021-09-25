@@ -137,9 +137,15 @@ function output_breadcrumb(){
       $cat_id = $cat->parent;
     }
     echo $home;
-    echo '<li class="breadcrumbs_list"><a href="'.get_bloginfo('url').'/articles/">お知らせ・ブログ</a></li>';
-    foreach($cat_list as $value) {
-      echo $value;
+    if((get_post_type() == 'snack_journeys')) {
+      echo '<li class="breadcrumbs_list"><a href="'.get_bloginfo('url').'/snack_journeys/">全国もぐり菓子発掘の旅</a></li>';
+    }elseif((get_post_type() == 'allstars')) {
+      echo '<li class="breadcrumbs_list"><a href="'.get_bloginfo('url').'/allstars/">全国もぐり菓子オールスター</a></li>';
+    }else{
+      echo '<li class="breadcrumbs_list"><a href="'.get_bloginfo('url').'/articles/">お知らせ・ブログ</a></li>';
+      foreach($cat_list as $value) {
+        echo $value;
+      }
     }
 //    the_title('<li class="breadcrumbs_list">', '</li>');
 
