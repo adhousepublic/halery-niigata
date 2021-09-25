@@ -178,7 +178,7 @@ add_filter('redirect_canonical','my_disable_redirect_canonical');
 
 function my_disable_redirect_canonical( $redirect_url ) {
 
-  if ( is_home() || is_archive() ){
+  if ( is_front_page() || is_home() || is_archive() ){
       $redirect_url = false;
       return $redirect_url;
   }
