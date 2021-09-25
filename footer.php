@@ -61,12 +61,12 @@
           $i++;
           endwhile;
           ?>
-          <li class="m_nav_link_list footer_link_list footer_link_list_5">
+          <li class="footer_link_list footer_link_list_5">
             <a href="<?php echo esc_url(the_field('onlineshop_link')); ?>" class="footer_link_and_link f__wt__5 cmn_link_unit" target="_blank" rel="nofollow noopener">
               オンラインストア
             </a>
           </li>
-          <li class="m_nav_link_listfooter_link_list footer_link_list_6">
+          <li class="footer_link_list footer_link_list_6">
             <a href="<?php echo esc_url(the_field('contact_link')); ?>" class="footer_link_and_link f__wt__5 cmn_link_unit" target="_blank" rel="nofollow noopener">
               お問い合わせ
             </a>
