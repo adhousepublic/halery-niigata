@@ -62,7 +62,27 @@ function keep_admin_posts_category_order( $args, $post_id = null ) {
 }
 add_action( 'wp_terms_checklist_args', 'keep_admin_posts_category_order' );
 
+/* the_archive_title 余計な文字を削除 */
+add_filter( 'get_the_archive_title', function ($title) {
+  if (is_category()) {
+    $title = single_cat_title('',false);
+  } elseif (is_tag()) {
+    $title = single_tag_title('',false);
+  } elseif (is_tax()) {
+    $title = single_term_title('',false);
+  } elseif (is_post_type_archive() ){
+    $title = post_type_archive_title('',false);
+  } elseif (is_date()) {
+    $title = get_the_time('Y年n月');
+  } elseif (is_search()) {
+    $title = '検索結果：'.esc_html( get_search_query(false) );
+  } elseif (is_404()) {
+    $title = '「404」ページが見つかりません';
+  } else {
 
+  }
+  return $title;
+});
 
 function custom_excerpt_length( $length ) {
   return 100;	//表示したい文字数
@@ -79,7 +99,9 @@ function output_breadcrumb(){
   echo '<ul class="the_breadcrumbs w_max1366">';
 
   // トップページの場合
-  if ( is_front_page() ) {
+  if ( is_home() ) {
+    echo $home;
+    the_title('<li class="breadcrumbs_list">', '</li>');
 
     // カテゴリーページの場合
   } else if ( is_category() ) {
