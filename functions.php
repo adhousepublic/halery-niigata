@@ -19,6 +19,7 @@ if (!function_exists('my_header_scripts')) {
       wp_enqueue_style( 'commoncss', get_stylesheet_directory_uri() . '/common/css/common.css', array(), '20091160944' );
       wp_enqueue_style( 'transition', get_stylesheet_directory_uri() . '/common/css/common-transition.css', array(), '20091160944' );
       wp_enqueue_style( 'rwd', get_stylesheet_directory_uri() . '/common/css/common-rwd.css', array(), '20091160944' );
+      wp_enqueue_style( 'wordpresscss', get_stylesheet_directory_uri() . '/common/css/wordpress.css', array(), '20091160944' );
     }
   }
 
@@ -165,7 +166,7 @@ function output_breadcrumb(){
 // ページネーションのHTMLカスタマイズ
 function custom_pagination_html( $template ) {
   $template = '
-    <nav class="cmn_blog_pager w_max1024 w960_in_1024" role="navigation">
+    <nav class="cmn_blog_pager_custom w_max1024 w960_in_1024" role="navigation">
         %3$s
     </nav>';
   return $template;

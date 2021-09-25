@@ -1,0 +1,66 @@
+.cmn_blog_pager_custom > .page-numbers {
+    --cmn-blog-pager-base-width: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: var(--pad-80);
+}
+.page-numbers li .page-numbers {
+    display: block;
+    width: var(--cmn-blog-pager-base-width);
+    height: var(--cmn-blog-pager-base-width);
+    overflow: hidden;
+    margin-left: .65%;
+    margin-right: .65%;
+    font-family: 'Roboto', sans-serif;
+    font-size: .813rem;
+    line-height: var(--cmn-blog-pager-base-width);
+    text-align: center;
+    color: var(--main-color-tone);
+    border-radius: 100%;
+    border: 1px solid var(--main-color-tone);
+    background-color: transparent;
+    cursor: pointer;
+}
+.page-numbers li:first-child .page-numbers {
+    margin-left: 0;
+}
+.page-numbers li:last-child  .page-numbers{
+    margin-right: 0;
+}
+.page-numbers li .page-numbers.next,
+.page-numbers li .page-numbers.prev
+.page-numbers li .page-numbers.dots {
+    border: 0 none;
+    font-size: 2rem;
+    font-weight: 100;
+}
+.page-numbers li .page-numbers.prev {
+    margin-right: 2.5%;
+}
+.page-numbers li .page-numbers.next {
+    margin-left: 2.5%;
+}
+.page-numbers li .page-numbers.dots {
+    margin-left: 1%;
+    margin-right: 1%;
+    line-height: 50%;
+}
+.page-numbers li .page-numbers.current {
+    background-color: var(--main-color-tone);
+    font-weight: 800;
+}
+.page-numbers li a.page-numbers.current {
+    color: var(--white-tone);
+}
+.page-numbers li .page-numbers.current,
+.page-numbers li .page-numbers.dots {
+    pointer-events: none;
+    cursor: default;
+}
