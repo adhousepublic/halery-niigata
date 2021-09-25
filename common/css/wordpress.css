@@ -28,6 +28,11 @@
     border: 1px solid var(--main-color-tone);
     background-color: transparent;
     cursor: pointer;
+    transition: .35s var(--img-trasition-func);
+}
+
+.page-numbers li .page-numbers:hover {
+    opacity: .55;
 }
 
 .page-numbers li .page-numbers.next,
@@ -38,10 +43,10 @@
     font-weight: 100;
 }
 .page-numbers li .page-numbers.prev {
-    padding-right: 24px;
+    margin-right: 24px;
 }
 .page-numbers li .page-numbers.next {
-    padding-left: 24px;
+    margin-left: 24px;
 }
 .page-numbers li .page-numbers.dots {
     margin-left: 1%;
