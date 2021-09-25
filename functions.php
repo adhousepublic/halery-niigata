@@ -29,16 +29,13 @@ if (!function_exists('my_header_scripts')) {
 
 add_theme_support('post-thumbnails');
 
-/*===================================================================
-*テンプレート、カスタム投稿タイプ・カスタムタクソノミーごとの表示件数を設定
-===================================================================*/
-add_action('pre_get_posts','my_pre_get_posts');
+add_action( 'pre_get_posts', 'my_pre_get_posts' );
 function my_pre_get_posts( $query ) {
-  if($query -> is_post_type_archive('snack_journeys')){
-    $query -> set('posts_per_page', 1);
+  if ( $query->is_main_query() && ! is_admin() && ( is_post_type_archive( 'snack_journeys' ) ) ) {
+    $query->set( 'posts_per_page', 1 );
   }
-  if($query -> is_post_type_archive('allstars')){
-    $query -> set('posts_per_page', -1);
+  if ( $query->is_main_query() && ! is_admin() && ( is_post_type_archive( 'allstars' ) ) ) {
+    $query->set( 'posts_per_page', -1 );
   }
 }
 
