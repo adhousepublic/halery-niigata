@@ -178,7 +178,7 @@ add_filter('redirect_canonical','my_disable_redirect_canonical');
 
 function my_disable_redirect_canonical( $redirect_url ) {
 
-  if ( is_home() ){
+  if ( is_home() || is_archive() ){
     $subject = $redirect_url;
     $pattern = '/\/page\//'; // URLに「/page/」があるかチェック
     preg_match($pattern, $subject, $matches);
