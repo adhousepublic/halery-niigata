@@ -650,7 +650,7 @@ if ( have_posts() ) :
           <p class="top_franchise_notice_desc f__16 f__ln__30">「他にはないおつまみを、地域のお客様に届けたい」。そんな思いを持っているお店の皆様には、ハレリー自慢の味をおすそわけしちゃいます。商品を取り扱いたい方は、お気軽にお問い合わせください。</p>
           <div class="cmn_contact_group_style top_franchise_notice_contact">
             <div class="cmn_contact_btn_style">
-              <a href="https://thebase.in/inquiry/halery-shopselect-net" class="cmn_contact_btn_link cmn_link_unit" target="_blank">
+              <a href="<?php echo esc_url(get_field('contact_link', 'option')); ?>" class="cmn_contact_btn_link cmn_link_unit" target="_blank">
                                 <span class="cmn_contact_btn_icon">
                                     <svg class="the_cmn_icon_contact" viewbox="0 0 28 21">
                                         <use xlink:href="#use-contact-icon" class="the_cmn_icon_contact_element"></use>
@@ -661,14 +661,14 @@ if ( have_posts() ) :
             </div>
             <div class="cmn_contact_sns_block">
               <div class="cmn_contact_and_sns_list cmn_contact_and_sns_instagram">
-                <a href="https://www.instagram.com/hareri.atarime" class="cmn_contact_sns_link cmn_contact_sns_link_insta cmn_link_unit" target="_blank">
+                <a href="<?php echo esc_url(get_field('instagram_link', 'option')); ?>" class="cmn_contact_sns_link cmn_contact_sns_link_insta cmn_link_unit" target="_blank">
                   <svg class="the_cmn_contact_sns_icon the_cmn_contact_sns_icon_instagram" viewbox="0 0 25 25">
                     <use xlink:href="#use-sns-icon-instagram" class="the_cmn_cntc_sns_ico_element cmntnct_icoelmt_insta"></use>
                   </svg>
                 </a>
               </div>
               <div class="cmn_contact_and_sns_list cmn_contact_and_sns_facebook">
-                <a href="https://www.facebook.com/HareriXinXi" class="cmn_contact_sns_link cmn_contact_sns_link_fbook cmn_link_unit" target="_blank">
+                <a href="<?php echo esc_url(get_field('facebook_link', 'option')); ?>" class="cmn_contact_sns_link cmn_contact_sns_link_fbook cmn_link_unit" target="_blank">
                   <svg class="the_cmn_contact_sns_icon the_cmn_contact_sns_icon_fbook" viewbox="0 0 25 25">
                     <use xlink:href="#use-sns-icon-facebook" class="the_cmn_cntc_sns_ico_element cmntnct_icoelmt_fbook"></use>
                   </svg>
