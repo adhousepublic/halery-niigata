@@ -33,10 +33,9 @@ add_theme_support('post-thumbnails');
 if (!function_exists('my_pre_get_posts')) {
   add_action('pre_get_posts', 'my_pre_get_posts');
   function my_pre_get_posts($query) {
-//    if (!is_admin()) {
-//      $query->set('order', 'ASC');
-//      $query->set('orderby', 'title');
-//    }
+    if (!is_admin() && is_post_type_archive('snack_journeys')) {
+      $query->set('post_per_page', 1);
+    }
   }
 }
 
