@@ -115,6 +115,7 @@ function output_breadcrumb(){
       $cat_id = $cat->parent;
     }
     echo $home;
+    echo '<li class="breadcrumbs_list"><a href="'.get_bloginfo('url').'/news/">お知らせ・ブログ</a></li>';
     foreach ($cat_list as $value) {
       echo $value;
     }
@@ -137,6 +138,7 @@ function output_breadcrumb(){
       $cat_id = $cat->parent;
     }
     echo $home;
+    echo '<li class="breadcrumbs_list"><a href="'.get_bloginfo('url').'/news/">お知らせ・ブログ</a></li>';
     foreach($cat_list as $value) {
       echo $value;
     }
