@@ -171,3 +171,11 @@ function custom_pagination_html( $template ) {
   return $template;
 }
 add_filter('navigation_markup_template','custom_pagination_html');
+
+function stop_redirect_canonical( $redirect_url ) {
+  if( is_404() ) {
+    return false;
+  }
+  return $redirect_url;
+}
+add_filter( ‘redirect_canonical’, ‘stop_redirect_canonical’ );
