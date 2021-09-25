@@ -82,15 +82,15 @@
           )
         ); ?>
         <!--/WPページャー-->
-        <div class="cmn_blog_pager w_max1024 w960_in_1024">
-          <a href="../blog" class="cmn_blog_pager_list cmn_blog_pager_list_prev mover_link cmn_link_unit"><</a>
-          <a href="../blog" class="cmn_blog_pager_list mover_link cmn_link_unit cmn_blog_pager_current">1</a>
-          <a href="../blog" class="cmn_blog_pager_list mover_link cmn_link_unit">2</a>
-          <a href="../blog" class="cmn_blog_pager_list mover_link cmn_link_unit">3</a>
-          <span class="cmn_blog_pager_list cmn_blog_pager_more">...</span>
-          <a href="../blog" class="cmn_blog_pager_list mover_link cmn_link_unit">99</a>
-          <a href="../blog" class="cmn_blog_pager_list mover_link cmn_blog_pager_list_next cmn_link_unit">></a>
-        </div>
+<!--        <div class="cmn_blog_pager w_max1024 w960_in_1024">-->
+<!--          <a href="../blog" class="cmn_blog_pager_list cmn_blog_pager_list_prev mover_link cmn_link_unit"><</a>-->
+<!--          <a href="../blog" class="cmn_blog_pager_list mover_link cmn_link_unit cmn_blog_pager_current">1</a>-->
+<!--          <a href="../blog" class="cmn_blog_pager_list mover_link cmn_link_unit">2</a>-->
+<!--          <a href="../blog" class="cmn_blog_pager_list mover_link cmn_link_unit">3</a>-->
+<!--          <span class="cmn_blog_pager_list cmn_blog_pager_more">...</span>-->
+<!--          <a href="../blog" class="cmn_blog_pager_list mover_link cmn_link_unit">99</a>-->
+<!--          <a href="../blog" class="cmn_blog_pager_list mover_link cmn_blog_pager_list_next cmn_link_unit">></a>-->
+<!--        </div>-->
       </div>
     </div>
   </main>
