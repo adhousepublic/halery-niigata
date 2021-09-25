@@ -62,12 +62,12 @@
           endwhile;
           ?>
           <li class="footer_link_list footer_link_list_5">
-            <a href="<?php echo esc_url(the_field('onlineshop_link')); ?>" class="footer_link_and_link f__wt__5 cmn_link_unit" target="_blank" rel="nofollow noopener">
+            <a href="<?php echo esc_url(the_field('onlineshop_link', 'option')); ?>" class="footer_link_and_link f__wt__5 cmn_link_unit" target="_blank" rel="nofollow noopener">
               オンラインストア
             </a>
           </li>
           <li class="footer_link_list footer_link_list_6">
-            <a href="<?php echo esc_url(the_field('contact_link')); ?>" class="footer_link_and_link f__wt__5 cmn_link_unit" target="_blank" rel="nofollow noopener">
+            <a href="<?php echo esc_url(the_field('contact_link', 'option')); ?>" class="footer_link_and_link f__wt__5 cmn_link_unit" target="_blank" rel="nofollow noopener">
               お問い合わせ
             </a>
           </li>
