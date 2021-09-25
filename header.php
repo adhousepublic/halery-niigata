@@ -156,12 +156,12 @@
             endwhile;
             ?>
             <li class="m_nav_link_list">
-              <a href="<?php echo esc_url(the_field('onlineshop_link', 'option')); ?>" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit" target="_blank" rel="nofollow noopener">
+              <a href="<?php echo esc_url(get_field('onlineshop_link', 'option')); ?>" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit" target="_blank" rel="nofollow noopener">
                 オンラインストア
               </a>
             </li>
             <li class="m_nav_link_list">
-              <a href="<?php echo esc_url(the_field('contact_link', 'option')); ?>" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit" target="_blank" rel="nofollow noopener">
+              <a href="<?php echo esc_url(get_field('contact_link', 'option')); ?>" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit" target="_blank" rel="nofollow noopener">
                 お問い合わせ
               </a>
             </li>
