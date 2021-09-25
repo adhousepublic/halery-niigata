@@ -48,7 +48,7 @@
           <?php
           $i = 1;
           while(have_rows('menu', 'option')): the_row();
-            $menu_link = get_sub_field('link');
+            $menu_link = get_sub_field('url');
             $menu_newtab = get_sub_field('newtab');
             $menu_label = get_sub_field('label');
             ?>
