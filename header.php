@@ -155,6 +155,16 @@
               <?php
             endwhile;
             ?>
+            <li class="m_nav_link_list">
+              <a href="<?php echo esc_url(the_field('onlineshop_link')); ?>" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit" target="_blank" rel="nofollow noopener">
+                オンラインストア
+              </a>
+            </li>
+            <li class="m_nav_link_list">
+              <a href="<?php echo esc_url(the_field('contact_link')); ?>" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit" target="_blank" rel="nofollow noopener">
+                お問い合わせ
+              </a>
+            </li>
           </ul>
         <?php endif; ?>
 <!--        <ul class="m_nav_link_group">-->
