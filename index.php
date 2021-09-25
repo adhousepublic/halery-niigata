@@ -71,6 +71,17 @@
           <?php endif; ?>
         </article>
 
+        <!--WPページャー-->
+        <?php the_posts_pagination(
+          array(
+            'mid_size'      => 1, // 現在ページの左右に表示するページ番号の数
+            'prev_next'     => true, // 「前へ」「次へ」のリンクを表示する場合はtrue
+            'prev_text'     => __( '<'), // 「前へ」リンクのテキスト
+            'next_text'     => __( '>'), // 「次へ」リンクのテキスト
+            'type'          => 'list', // 戻り値の指定 (plain/list)
+          )
+        ); ?>
+        <!--/WPページャー-->
         <div class="cmn_blog_pager w_max1024 w960_in_1024">
           <a href="../blog" class="cmn_blog_pager_list cmn_blog_pager_list_prev mover_link cmn_link_unit"><</a>
           <a href="../blog" class="cmn_blog_pager_list mover_link cmn_link_unit cmn_blog_pager_current">1</a>
