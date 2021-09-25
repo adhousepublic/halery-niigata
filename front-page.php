@@ -587,7 +587,7 @@ if ( have_posts() ) :
           // 投稿データをリセット
           wp_reset_postdata();
           ?>
-          <a href="/blog" class="top_blog_to_all_link f__18 f__ltr__1 f__wt__5">一覧へ</a>
+          <a href="<?php echo esc_url( home_url( '/news/' ) ); ?>" class="top_blog_to_all_link f__18 f__ltr__1 f__wt__5">一覧へ</a>
         </div>
       </div>
     </div>
