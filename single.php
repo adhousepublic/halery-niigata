@@ -12,14 +12,7 @@
   </div>
 
   <div class="inner_content_wrap">
-    <ul class="the_breadcrumbs w_max1366">
-      <li class="breadcrumbs_list">
-        <a href="/" class="breadcrumbs_link mover_link cmn_link_unit">top</a>
-      </li>
-      <li class="breadcrumbs_list">
-        <a href="../blog" class="breadcrumbs_link mover_link cmn_link_unit">お知らせ・ブログ</a>
-      </li>
-    </ul>
+    <?php output_breadcrumb(); ?>
 
 
     <div class="inner_content">
