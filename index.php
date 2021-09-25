@@ -94,7 +94,6 @@
   <!-- //main content -->
 
 
-  wp_loop
 <?php
 get_footer();
 
