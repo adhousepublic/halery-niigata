@@ -41,7 +41,7 @@
             </div>
           </article>
           <div class="cmn_blog_detail_footer">
-            <a href="<?php echo esc_url( home_url( '/news/' ) ); ?>" class="cmn_blog_detail_backlist mover_link cmn_link_unit">
+            <a href="<?php echo esc_url( home_url( '/articles/' ) ); ?>" class="cmn_blog_detail_backlist mover_link cmn_link_unit">
               <span class="cmn_blog_detbklst_text f__16 f__wt__8 f__ltr__2">一覧へ戻る</span>
               <span class="cmn_blog_detbklst_icon font_en_roboto f__36 f__wt__1 font_en_roboto">></span>
             </a>

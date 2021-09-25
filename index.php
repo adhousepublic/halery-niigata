@@ -20,7 +20,7 @@
         <article class="cmn_blog_content_wrap w_max1024">
 
           <h2 class="cmn_blog_tab_group tabs_in_blog">
-            <a href="<?php echo esc_url( home_url( '/news/' ) ); ?>" class="cmn_blog_tab_caption mover_link cmn_link_unit f__16 f__wt__8 f__ln__28 f__ltr__2 f__ltr__2__center font_en_roboto">すべて</a>
+            <a href="<?php echo esc_url( home_url( '/articles/' ) ); ?>" class="cmn_blog_tab_caption mover_link cmn_link_unit f__16 f__wt__8 f__ln__28 f__ltr__2 f__ltr__2__center font_en_roboto">すべて</a>
             <?php
             $categories = get_categories();
             foreach($categories as $category) {
