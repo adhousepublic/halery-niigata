@@ -108,9 +108,9 @@
 <!-- //wrapper -->
 <div class="common_load"></div>
 <!-- SVG call -->
-<?php if(is_front_page()) {
+<?php
   get_template_part('top', 'svg');
-} ?>
+?>
 <?php wp_footer(); ?>
 
 </body>
