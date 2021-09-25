@@ -98,7 +98,7 @@
       <span class="switch_open_text cmn_tool_text font_en_roboto f__ltr__2 f__ltr__2__center f__wt__8">menu</span>
     </div>
     <div class="aside_to_online_store">
-      <a href="https://halery.shopselect.net" class="store_access_link" target="_blank">
+      <a href="<?php echo esc_url(get_field('onlineshop_link', 'option')); ?>" class="store_access_link" target="_blank">
         <div class="ika_of_onlinstore">
           <svg class="the_ika_icon" viewbox="0 0 100 78">
             <use xlink:href="#use-ika-for-navi" class="the_ika_icon_element"></use>
@@ -109,14 +109,14 @@
     </div>
     <ul class="aside_sns_group">
       <li class="the_sns_list sns_list_instagram">
-        <a href="https://www.instagram.com/hareri.atarime" class="sns_access_link cmn_link_unit" target="_blank">
+        <a href="<?php echo esc_url(get_field('instagram_link', 'option')); ?>" class="sns_access_link cmn_link_unit" target="_blank">
           <svg class="the_sns_icon_instagram" viewbox="0 0 25 25">
             <use xlink:href="#use-sns-icon-instagram" class="the_sns_icon_instagram_element"></use>
           </svg>
         </a>
       </li>
       <li class="the_sns_list sns_list_facebook">
-        <a href="https://www.facebook.com/HareriXinXi" class="sns_access_link cmn_link_unit" target="_blank">
+        <a href="<?php echo esc_url(get_field('facebook_link', 'option')); ?>" class="sns_access_link cmn_link_unit" target="_blank">
           <svg class="the_sns_icon_facebook" viewbox="0 0 25 25">
             <use xlink:href="#use-sns-icon-facebook" class="the_sns_icon_facebook_element"></use>
           </svg>
@@ -181,7 +181,7 @@
 <!--            <a href="--><?php //echo esc_url( home_url() ); ?><!--/blog" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit mover_link">お知らせ・ブログ</a>-->
 <!--          </li>-->
 <!--          <li class="m_nav_link_list">-->
-<!--            <a href="https://halery.shopselect.net" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit" target="_blank">オンラインストア</a>-->
+<!--            <a href="<?php echo esc_url(get_field('onlineshop_link', 'option')); ?>" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit" target="_blank">オンラインストア</a>-->
 <!--          </li>-->
 <!--          <li class="m_nav_link_list">-->
 <!--            <a href="https://thebase.in/inquiry/halery-shopselect-net" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit" target="_blank">お問い合わせ</a>-->
