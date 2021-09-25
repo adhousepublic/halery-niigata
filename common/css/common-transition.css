@@ -1040,6 +1040,110 @@
             transform: rotate3d(1,1,1,0deg);
   }
 }
+@-webkit-keyframes ikauriWave3dsp {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes ikauriWave3dsp {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(-60deg);
+            transform: rotate(-60deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes ikauriWave2dsp {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes ikauriWave2dsp {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  10% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+  20% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  30% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+  40% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
 @-webkit-keyframes carExhustMove {
   0% {
     -webkit-transform: translate3d(3vw,0,0);
@@ -2477,8 +2581,8 @@
   background-image: url(../images/common/elmt-ikastore-2_curtain-left-1-1.svg);
   -webkit-animation-duration: .35s;
           animation-duration: .35s;
-  -webkit-animation-timing-function: ease-in;
-          animation-timing-function: ease-in;
+  -webkit-animation-timing-function: step-start;
+          animation-timing-function: step-start;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: .185s;
@@ -2820,6 +2924,14 @@
   -webkit-animation-name: ikauriJump;
           animation-name: ikauriJump;
 }
+.tfs_elmt_ikauriko_hand {
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+_::-webkit-full-page-media, _:future, :root .tfs_elmt_ikauriko_hand {
+  -webkit-transform-style: flat;
+          transform-style: flat;
+}
 .tfs_elmt_the_ikauriko_hand {
   -webkit-animation-duration: 3.25s;
           animation-duration: 3.25s;
@@ -2842,6 +2954,10 @@
   -webkit-animation-name: ikauriWave3d;
           animation-name: ikauriWave3d;
 }
+_::-webkit-full-page-media, _:future, :root .tfs_elmt_the_ikauriko_male_hand {
+  -webkit-animation-name: ikauriWave3dsp;
+          animation-name: ikauriWave3dsp;
+}
 .tfs_elmt_the_ikauriko_female_hand {
   -webkit-transform: rotate3d(1,1,1,0deg);
           transform: rotate3d(1,1,1,0deg);
@@ -2852,6 +2968,10 @@
           animation-delay: .15s;
   -webkit-animation-name: ikauriWave2d;
           animation-name: ikauriWave2d;
+}
+_::-webkit-full-page-media, _:future, :root .tfs_elmt_the_ikauriko_female_hand {
+  -webkit-animation-name: ikauriWave2dsp;
+          animation-name: ikauriWave2dsp;
 }
 .tfs_elmt_drive {
   -webkit-transform: translate3d(-10vw,0,0);

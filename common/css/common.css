@@ -2130,6 +2130,9 @@ img.tfs_elmt_the_road {
   top: 5%;
   right: -3.5%;
 }
+.tfs_elmt_the_ikauriko_body {
+  z-index: var(--layer_index_9);
+}
 /* //elmt-ikauriko */
 /* elmt-drive */
 .tfs_elmt_drive {
