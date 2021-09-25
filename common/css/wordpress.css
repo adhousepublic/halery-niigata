@@ -11,13 +11,14 @@
     align-items: center;
     margin-top: var(--pad-80);
 }
+.page-numbers li {
+    margin: 0 0.65%;
+}
 .page-numbers li .page-numbers {
     display: block;
     width: var(--cmn-blog-pager-base-width);
     height: var(--cmn-blog-pager-base-width);
     overflow: hidden;
-    margin-left: .65%;
-    margin-right: .65%;
     font-family: 'Roboto', sans-serif;
     font-size: .813rem;
     line-height: var(--cmn-blog-pager-base-width);
@@ -28,33 +29,29 @@
     background-color: transparent;
     cursor: pointer;
 }
-.page-numbers li:first-child .page-numbers {
-    margin-left: 0;
-}
-.page-numbers li:last-child  .page-numbers{
-    margin-right: 0;
-}
+
 .page-numbers li .page-numbers.next,
-.page-numbers li .page-numbers.prev
+.page-numbers li .page-numbers.prev,
 .page-numbers li .page-numbers.dots {
-    border: 0 none;
+    border: none;
     font-size: 2rem;
     font-weight: 100;
 }
 .page-numbers li .page-numbers.prev {
-    margin-right: 2.5%;
+    padding-right: 24px;
 }
 .page-numbers li .page-numbers.next {
-    margin-left: 2.5%;
+    padding-left: 24px;
 }
 .page-numbers li .page-numbers.dots {
     margin-left: 1%;
     margin-right: 1%;
-    line-height: 50%;
+    line-height: 35px;
 }
 .page-numbers li .page-numbers.current {
     background-color: var(--main-color-tone);
     font-weight: 800;
+    color: var(--white-tone);
 }
 .page-numbers li a.page-numbers.current {
     color: var(--white-tone);
@@ -63,4 +60,35 @@
 .page-numbers li .page-numbers.dots {
     pointer-events: none;
     cursor: default;
+}
+
+
+@media screen and (max-width: 641px) {
+    .cmn_blog_pager_custom > .page-numbers {
+        --cmn-blog-pager-base-width: 28px;
+        margin-top: var(--pad-60);
+    }
+    .page-numbers li {
+        margin-left: 4px;
+        margin-right: 4px;
+        font-size: .75rem;
+    }
+    .page-numbers li .page-numbers {
+        font-size: .75rem;
+    }
+    .page-numbers li .page-numbers.next,
+    .page-numbers li .page-numbers.prev,
+    .page-numbers li .page-numbers.dots {
+        font-size: 2rem;
+    }
+    .page-numbers li .page-numbers.prev {
+        margin-right: 12px;
+    }
+    .page-numbers li .page-numbers.next {
+        margin-left: 12px;
+    }
+    .page-numbers li .page-numbers.dots {
+        margin: 0;
+        line-height: 28px;
+    }
 }
