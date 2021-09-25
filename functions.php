@@ -116,7 +116,7 @@ function output_breadcrumb(){
       $cat_id = $cat->parent;
     }
     echo $home;
-    echo '<li class="breadcrumbs_list"><a href="'.get_bloginfo('url').'/news/">お知らせ・ブログ</a></li>';
+    echo '<li class="breadcrumbs_list"><a href="'.get_bloginfo('url').'/articles/">お知らせ・ブログ</a></li>';
     foreach ($cat_list as $value) {
       echo $value;
     }
@@ -139,7 +139,7 @@ function output_breadcrumb(){
       $cat_id = $cat->parent;
     }
     echo $home;
-    echo '<li class="breadcrumbs_list"><a href="'.get_bloginfo('url').'/news/">お知らせ・ブログ</a></li>';
+    echo '<li class="breadcrumbs_list"><a href="'.get_bloginfo('url').'/articles/">お知らせ・ブログ</a></li>';
     foreach($cat_list as $value) {
       echo $value;
     }
@@ -173,13 +173,3 @@ function custom_pagination_html( $template ) {
 }
 add_filter('navigation_markup_template','custom_pagination_html');
 
-
-add_filter('redirect_canonical','my_disable_redirect_canonical');
-
-function my_disable_redirect_canonical( $redirect_url ) {
-
-  if ( is_front_page() || is_home() || is_archive() ){
-      $redirect_url = false;
-      return $redirect_url;
-  }
-}
