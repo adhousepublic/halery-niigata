@@ -43,14 +43,28 @@
       </div>
     </div>
     <div class="footer_bot">
-      <?php wp_nav_menu( array(
-        'theme_location' => 'footer',
-        'container'      => false,
-        'menu_class' => 'footer_link_group',
-        'add_li_class'  => 'footer_link_list',
-        'add_a_class'  => 'footer_link_and_link f__wt__5 cmn_link_unit mover_link',
-      )); ?>
-<!--      <ul class="footer_link_group">-->
+      <?php if(have_rows('menu', 'option')): ?>
+        <ul class="footer_link_group">
+          <?php
+          $i = 1;
+          while(have_rows('menu', 'option')): the_row();
+            $menu_link = get_sub_field('link');
+            $menu_newtab = get_sub_field('newtab');
+            $menu_label = get_sub_field('label');
+            ?>
+            <li class="footer_link_list footer_link_list_<?php echo esc_attr($i); ?>">
+              <a href="<?php echo esc_url($menu_link); ?>" class="footer_link_and_link f__wt__5 cmn_link_unit <?php if(!$menu_newtab){ ?>mover_link<?php } ?>" <?php if($menu_newtab){ ?>target="_blank" rel="nofollow noopener"<?php } ?>>
+                <?php echo esc_html($menu_label); ?>
+              </a>
+            </li>
+          <?php
+          $i++;
+          endwhile;
+          ?>
+        </ul>
+      <?php endif; ?>
+
+      <!--      <ul class="footer_link_group">-->
 <!--        <li class="footer_link_list footer_link_list_1">-->
 <!--          <a href="--><?php //echo esc_url( home_url() ); ?><!--/about" class="footer_link_and_link f__wt__5 cmn_link_unit mover_link">ハレリーについて</a>-->
 <!--        </li>-->
