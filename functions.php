@@ -161,3 +161,13 @@ function output_breadcrumb(){
   }
   echo '</ul>';
 }
+
+// ページネーションのHTMLカスタマイズ
+function custom_pagination_html( $template ) {
+  $template = '
+    <nav class="cmn_blog_pager w_max1024 w960_in_1024" role="navigation">
+        %3$s
+    </nav>';
+  return $template;
+}
+add_filter('navigation_markup_template','custom_pagination_html');
