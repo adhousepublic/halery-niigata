@@ -101,7 +101,7 @@ function output_breadcrumb(){
   // トップページの場合
   if ( is_home() ) {
     echo $home;
-    the_title('<li class="breadcrumbs_list">', '</li>');
+    echo '<li class="breadcrumbs_list">お知らせ・ブログ</li>';
 
     // カテゴリーページの場合
   } else if ( is_category() ) {
