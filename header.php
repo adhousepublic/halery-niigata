@@ -139,13 +139,24 @@
                 </span>
       </h2>
       <div class="m_nav_content">
-        <?php wp_nav_menu( array(
-          'theme_location' => 'global',
-          'container'      => false,
-          'menu_class' => 'm_nav_link_group',
-          'add_li_class'  => 'm_nav_link_list',
-          'add_a_class'  => 'm_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit mover_link',
-        )); ?>
+        <?php if(have_rows('menu', 'option')): ?>
+          <ul class="m_nav_link_group">
+            <?php
+            while(have_rows('menu', 'option')): the_row();
+              $menu_link = get_sub_field('link');
+              $menu_newtab = get_sub_field('newtab');
+              $menu_label = get_sub_field('label');
+                ?>
+                <li class="m_nav_link_list">
+                  <a href="<?php echo esc_url($menu_link); ?>" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit <?php if(!$menu_newtab){ ?>mover_link<?php } ?>" <?php if($menu_newtab){ ?>target="_blank" rel="nofollow noopener"<?php } ?>>
+                    <?php echo esc_html($menu_label); ?>
+                  </a>
+                </li>
+              <?php
+            endwhile;
+            ?>
+          </ul>
+        <?php endif; ?>
 <!--        <ul class="m_nav_link_group">-->
 <!--          <li class="m_nav_link_list">-->
 <!--            <a href="--><?php //echo esc_url( home_url() ); ?><!--/about" class="m_nav_the_link cmn_link_unit f__20 f__wt__8 cmn_link_unit mover_link">ハレリーについて</a>-->
