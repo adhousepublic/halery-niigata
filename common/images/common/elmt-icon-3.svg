@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="the-contact-icon-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 28 21" style="enable-background:new 0 0 28 21;" xml:space="preserve">
+<style type="text/css">
+	.svg__m__color{fill:#14195A;}
+	.svg__pnk__color {fill: #e64673;}
+	.svg__ong__color {fill: #f0785f;}
+	.svg__grn__color {fill: #96d2cd;}
+	.svg__mlgt__color {fill: #fff8ee;}
+	.svg__blk__color {fill: #000000;}
+	.svg__skin__color{fill:#f5afb4;}
+	.svg__w__color{fill:#ffffff;}
+</style>
+<path class="svg__w__color usesvg_contact_icon" d="M28,1c0-0.1,0-0.2-0.1-0.3c0,0,0,0,0,0c0,0,0,0,0-0.1c0-0.1-0.1-0.2-0.1-0.2c0,0-0.1-0.1-0.1-0.1
+	c-0.1-0.1-0.1-0.1-0.2-0.1c0,0-0.1,0-0.1,0C27.2,0,27.1,0,27,0H1C0.9,0,0.8,0,0.6,0.1c0,0-0.1,0-0.1,0c-0.1,0-0.1,0.1-0.2,0.1
+	c0,0-0.1,0-0.1,0.1C0.2,0.4,0.2,0.5,0.1,0.6c0,0,0,0,0,0.1c0,0,0,0,0,0C0,0.8,0,0.9,0,1c0,0,0,0,0,0v19c0,0.6,0.4,1,1,1h26
+	c0.6,0,1-0.4,1-1L28,1C28,1,28,1,28,1z M24.3,2L14,11.1L3.7,2H24.3z M2,19V3.2l11.3,10c0.2,0.2,0.4,0.2,0.7,0.2s0.5-0.1,0.7-0.2
+	L26,3.2V19H2z"/>
+</svg>
