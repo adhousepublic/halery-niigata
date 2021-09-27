@@ -22,6 +22,7 @@
               'post_type' => 'allstars',
               'posts_per_page' => -1,
               'order' => 'ASC',
+              'orderby' => 'date',
             );
 
             $the_query = new WP_Query( $args );
@@ -118,7 +119,7 @@
                     <?php
                     $thumb_num = 1;
                     while(have_rows('item_img')): the_row(); ?>
-                      <li class="salts_itemimg_tmb_list salts_itemimg_tmb_list_1 cmn_link_unit" data-itemname="salts-itmimg-<?php echo esc_attr($item_num); ?>-<?php echo esc_attr($thumb_num); ?>">
+                      <li class="salts_itemimg_tmb_list salts_itemimg_tmb_list_<?php echo esc_attr($thumb_num); ?> cmn_link_unit" data-itemname="salts-itmimg-<?php echo esc_attr($item_num); ?>-<?php echo esc_attr($thumb_num); ?>">
                         <img src="<?php echo esc_url(get_sub_field('img')) ?>" alt="">
                       </li>
                       <?php

@@ -37,6 +37,7 @@ function my_pre_get_posts( $query ) {
   if ( $query->is_main_query() && ! is_admin() && ( is_post_type_archive( 'allstars' ) ) ) {
     $query->set( 'posts_per_page', -1 );
     $query->set( 'order', 'ASC' );
+    $query->set( 'orderby', 'date' );
   }
 }
 
