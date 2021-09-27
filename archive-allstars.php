@@ -119,7 +119,7 @@
                     $thumb_num = 1;
                     while(have_rows('item_img')): the_row(); ?>
                       <li class="salts_itemimg_tmb_list salts_itemimg_tmb_list_1 cmn_link_unit" data-itemname="salts-itmimg-<?php echo esc_attr($item_num); ?>-<?php echo esc_attr($thumb_num); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/allstars/item-1-curryp-1.jpg" alt="">
+                        <img src="<?php echo esc_url(get_sub_field('img')) ?>" alt="">
                       </li>
                       <?php
                       $thumb_num++;
