@@ -329,10 +329,10 @@ if ( have_posts() ) :
     </div>
     <div id="top-instagram">
       <p class="cmn_sub_sec_caption font_en_roboto f__24 f__ltr__5 f__ltr__5__center f__wt__5">instagram</p>
-      <div class="top_insta_container w_max1024 w960_in_1024 sp-none">
+      <div class="top_insta_container w_max1024 w960_in_1024 sp_none">
         <?php echo do_shortcode("[instagram-feed]"); ?>
       </div>
-      <div class="top_insta_container w_max1024 w960_in_1024 sp-visible">
+      <div class="top_insta_container w_max1024 w960_in_1024 sp_visible">
         <?php echo do_shortcode("[instagram-feed num=3]"); ?>
       </div>
     </div>
