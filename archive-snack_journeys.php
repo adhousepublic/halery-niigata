@@ -65,11 +65,10 @@
           <?php endif; ?>
 
 
-
-          <div class="cmn_blog_detail_footer">
-            <p class="cmn_blog_detail_backlist cmn_link_unit" id="backlist-in-journey">
-              <span class="cmn_blog_detbklst_text f__16 f__wt__8 f__ltr__2">他の編を読む</span>
-              <span class="cmn_blog_detbklst_icon f__36 f__wt__1 font_en_roboto">^</span>
+          <div class="cmn_blog_detail_footer cmn_blog_detail_footer_in_journey">
+            <p class="cmn_blog_detail_backlist cmn_btn_type_1 cmn_link_unit" id="backlist-in-journey">
+              <span class="cmn_btn_type_1_text f__16 f__wt__8 f__ltr__2">他の編を読む</span>
+              <span class="cmn_btn_type_1_icon f__36 f__wt__1 font_en_roboto">^</span>
             </p>
           </div>
         </article>
