@@ -2,15 +2,15 @@
   <div class="footer_container w_max1366">
     <div class="footer_top">
       <div class="footer_logo">
-        <a href="/" class="footer_back_home mover_link">
-          <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/footer-logo.png" class="footer_logo_img" alt="">
+        <a href="<?php echo esc_url( home_url() ); ?>" class="footer_back_home mover_link">
+          <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/footer-logo.png" class="footer_logo_img" alt="<?php echo esc_html(get_field('company_name', 'option')); ?>">
         </a>
       </div>
       <div class="footer_info_group">
-        <p class="footer_info_address f__wt__5">新潟市中央区新潟市中央区大島167-16</p>
+        <p class="footer_info_address f__wt__5"><?php echo esc_html(get_field('address', 'option')); ?></p>
         <p class="footer_info_number f__wt__5">
-          <span class="footer_info_tel f__ltr__1">TEL 025-281-0081</span>
-          <span class="footer_info_fax f__ltr__1">FAX 025-281-0083</span>
+          <span class="footer_info_tel f__ltr__1">TEL <?php echo esc_html(get_field('tel_num', 'option')); ?></span>
+          <span class="footer_info_fax f__ltr__1">FAX <?php echo esc_html(get_field('fax_num', 'option')); ?></span>
         </p>
         <div class="cmn_contact_group_style footer_info_outside">
           <div class="cmn_contact_btn_style">
