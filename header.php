@@ -2,14 +2,14 @@
 <html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" <?php if(is_front_page()) { ?>class="top_page"<?php } ?>>
 <head>
   <?php
-  if (is_singular()) {
+  if(is_front_page()) {
+    $ogp_description = get_bloginfo('description');
+  }else if (is_singular()) {
     setup_postdata($post);
     $ogp_title = $post->post_title;
     $ogp_description = mb_substr(get_the_excerpt(), 0, 100);
     $ogp_url = get_permalink();
     wp_reset_postdata();
-  }else if(is_front_page()) {
-    $ogp_description = get_bloginfo('description');
   }
   ?>
   <meta charset="utf-8">
