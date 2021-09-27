@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="ja" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" <?php if(is_front_page()) { ?>class="top_page"<?php } ?>>
 <head>
+  <?php
+  if (is_singular()) {
+    setup_postdata($post);
+    $ogp_title = $post->post_title;
+    $ogp_description = mb_substr(get_the_excerpt(), 0, 100);
+    $ogp_url = get_permalink();
+    wp_reset_postdata();
+  }else if(is_front_page()) {
+    $ogp_description = get_bloginfo('description');
+  }
+  ?>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title><?php echo trim(wp_title('', false)); if(wp_title('', false)) { echo ' - '; } bloginfo('name'); ?></title>
@@ -11,21 +22,31 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="">
-  <meta name="description" content="トップページのDiscription"/>
+  <?php if(!empty($ogp_description)) { ?>
+    <meta name="description" content="<?php echo esc_html($ogp_description); ?>"/>
+  <?php } ?>
   <meta property="og:locale" content="ja_JP" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="あたりめのハレリーのトップページ" />
-  <meta property="og:description" content="トップページのDiscription/Facebook" />
-  <meta property="og:url" content="https://halery.jp" />
-  <meta property="og:site_name" content="あたりめのハレリーコーポレートサイト" />
+  <meta property="og:title" content="<?php echo trim(wp_title('', false)); if(wp_title('', false)) { echo ' - '; } bloginfo('name'); ?>" />
+  <?php if(!empty($ogp_description)) { ?>
+    <meta property="og:description" content="<?php echo esc_html($ogp_description); ?>/Facebook" />
+  <?php } ?>
+  <?php if(!empty($ogp_url)) { ?>
+    <meta property="og:url" content="<?php echo esc_html($ogp_url); ?>" />
+  <?php }else{ ?>
+    <meta property="og:url" content="<?php echo esc_url( home_url() ); ?>" />
+  <?php } ?>
+  <meta property="og:site_name" content="あたりめのハレリー" />
   <meta property="fb:app_id" content="505643407207907" />
   <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/common/images/common/og_img.jpg" />
   <meta property="og:image:secure_url" content="<?php echo get_template_directory_uri(); ?>/common/images/common/og_img.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:description" content="トップページのDiscription/twitter" />
-  <meta name="twitter:title" content="あたりめのハレリーのトップページ" />
+  <?php if(!empty($ogp_description)) { ?>
+    <meta name="twitter:description" content="<?php echo esc_html($ogp_description); ?>/twitter" />
+  <?php } ?>
+  <meta name="twitter:title" content="<?php echo trim(wp_title('', false)); if(wp_title('', false)) { echo ' - '; } bloginfo('name'); ?>" />
   <meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/common/images/common/og_img.jpg" />
   <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/common/images/common/favicons/favicon.ico" type="image/vnd.microsoft.icon">
   <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/common/images/common/favicons/favicon.ico" type="image/vnd.microsoft.icon">
@@ -43,7 +64,7 @@
   <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/common/images/common/favicons/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/common/images/common/favicons/favicon-16x16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/common/images/common/favicons/favicon-32x32.png" sizes="32x32">
-  <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/common/images/common/favicons/manifest.json">
+  <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/common/images/common/favicons/manifest.json?ver=21091134">
   <meta name="msapplication-TileColor" content="#96d2cd">
   <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/common/images/common/favicons/mstile-144x144.png">
   <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>">
