@@ -5,10 +5,10 @@ if ( have_posts() ) :
   while ( have_posts() ) : the_post();
     ?>
   <main id="main-content">
-    <div id="top-first-scene">
+    <div id="top-first-scene" class="is__pandding">
       <div class="top_first_scene">
         <!-- main-logo -->
-        <div class="tfs_elmt_mlogo">
+        <div class="tfs_elmt_mlogo is__pandding">
           <div class="tfs_elmt_mlogo_cntr">
             <div class="tfs_elmt_mlogo_dialogue">
               <svg class="tfs_elmt_mlogo_dlog_wrap" viewbox="0 0 550 70">
@@ -26,50 +26,50 @@ if ( have_posts() ) :
         <!-- elements on the sky -->
         <div class="tfs_elmts_on_the_sky">
           <div class="tfs_elmts_sky_content">
-            <div class="tfs_elmt_moon">
+            <div class="tfs_elmt_moon is__pandding">
                             <span class="tfs_elmt_moon_wrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-moon-1.svg" class="tfs_elmt_the_moon" alt="">
+                                <img src="common/images/common/elmt-moon-1.svg" class="tfs_elmt_the_moon" alt="">
                             </span>
             </div>
-            <div class="tfs_elmt_sun">
+            <div class="tfs_elmt_sun is__pandding">
                             <span class="tfs_elmt_sun_wrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-sun-1.svg" class="tfs_elmt_the_sun" alt="">
+                                <img src="common/images/common/elmt-sun-1.svg" class="tfs_elmt_the_sun" alt="">
                             </span>
             </div>
             <div class="tfs_elmt_cloud_1">
                             <span class="tfs_elmt_cloud_1_wrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-cloud-1.svg" class="tfs_elmt_the_cloud_1" alt="">
+                                <img src="common/images/common/elmt-cloud-1.svg" class="tfs_elmt_the_cloud_1" alt="">
                             </span>
             </div>
-            <div class="tfs_elmt_baloon_2">
+            <div class="tfs_elmt_baloon_2 is__pandding">
                             <span class="tfs_elmt_baloon_2_wrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-baloon-2.svg" class="tfs_elmt_the_baloon_2" alt="">
+                                <img src="common/images/common/elmt-baloon-2.svg" class="tfs_elmt_the_baloon_2" alt="">
                             </span>
             </div>
             <div class="tfs_elmt_jets">
               <div class="tfs_elmt_jets_wrap">
-                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-jets-1_body.svg" class="tfs_elmt_the_jets_body" alt="">
+                <img src="common/images/common/elmt-jets-1_body.svg" class="tfs_elmt_the_jets_body" alt="">
                 <span class="tfs_elmt_jets_propeller">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-jets-2_propeller-1.svg" class="tfs_elmt_the_jets_propeller" alt="">
+                                    <img src="common/images/common/elmt-jets-2_propeller-1.svg" class="tfs_elmt_the_jets_propeller" alt="">
                                 </span>
                 <span class="tfs_elmt_jets_screw">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-jets-1_screw.svg" class="tfs_elmt_the_jets_screw" alt="">
+                                    <img src="common/images/common/elmt-jets-1_screw.svg" class="tfs_elmt_the_jets_screw" alt="">
                                 </span>
               </div>
             </div>
             <div class="tfs_elmt_bird">
                             <span class="tfs_elmt_bird_wrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-bird-1.svg" class="tfs_elmt_the_bird" alt="">
+                                <img src="common/images/common/elmt-bird-1.svg" class="tfs_elmt_the_bird" alt="">
                             </span>
             </div>
-            <div class="tfs_elmt_baloon_1">
+            <div class="tfs_elmt_baloon_1 is__pandding">
                             <span class="tfs_elmt_baloon_1_wrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-baloon-1.svg" class="tfs_elmt_the_baloon_1" alt="">
+                                <img src="common/images/common/elmt-baloon-1.svg" class="tfs_elmt_the_baloon_1" alt="">
                             </span>
             </div>
             <div class="tfs_elmt_cloud_2">
                             <span class="tfs_elmt_cloud_2_wrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-cloud-2.svg" class="tfs_elmt_the_cloud_2" alt="">
+                                <img src="common/images/common/elmt-cloud-2.svg" class="tfs_elmt_the_cloud_2" alt="">
                             </span>
             </div>
           </div>
@@ -78,69 +78,69 @@ if ( have_posts() ) :
         <!-- elements behind the ground -->
         <div class="tfs_elmts_behind_the_ground">
           <div class="tfs_elmts_behindground_content">
-            <div class="tfs_elmt_mtfuji">
+            <div class="tfs_elmt_mtfuji is__pandding">
                             <span class="tfs_elmt_mtfuji_wrap">
                                 <span class="tfs_elmt_fire_ohkasi tfs_elmt_fire_ohkasi_1">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ohtsumami-1.svg" class="tfs_elmt_the_fire_ohkasi" alt="">
+                                    <img src="common/images/common/elmt-ohtsumami-1.svg" class="tfs_elmt_the_fire_ohkasi tfs_elmt_the_fire_ohkasi_1" alt="">
                                 </span>
                                 <span class="tfs_elmt_fire_ohkasi tfs_elmt_fire_ohkasi_2">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ohtsumami-1.svg" class="tfs_elmt_the_fire_ohkasi" alt="">
+                                    <img src="common/images/common/elmt-ohtsumami-1.svg" class="tfs_elmt_the_fire_ohkasi tfs_elmt_the_fire_ohkasi_2" alt="">
                                 </span>
                                 <span class="tfs_elmt_fire_ohkasi tfs_elmt_fire_ohkasi_3">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ohtsumami-1.svg" class="tfs_elmt_the_fire_ohkasi" alt="">
+                                    <img src="common/images/common/elmt-ohtsumami-1.svg" class="tfs_elmt_the_fire_ohkasi tfs_elmt_the_fire_ohkasi_3" alt="">
                                 </span>
                                 <span class="tfs_elmt_fire_ohkasi tfs_elmt_fire_ohkasi_4">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ohtsumami-1.svg" class="tfs_elmt_the_fire_ohkasi" alt="">
+                                    <img src="common/images/common/elmt-ohtsumami-1.svg" class="tfs_elmt_the_fire_ohkasi tfs_elmt_the_fire_ohkasi_4" alt="">
                                 </span>
                                 <span class="tfs_elmt_fire_ohkasi tfs_elmt_fire_ohkasi_5">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ohtsumami-1.svg" class="tfs_elmt_the_fire_ohkasi" alt="">
+                                    <img src="common/images/common/elmt-ohtsumami-1.svg" class="tfs_elmt_the_fire_ohkasi tfs_elmt_the_fire_ohkasi_5" alt="">
                                 </span>
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-fuji-1.svg" class="tfs_elmt_the_mtfuji" alt="">
+                                <img src="common/images/common/elmt-fuji-1.svg" class="tfs_elmt_the_mtfuji" alt="">
                             </span>
             </div>
             <div class="tfs_elmt_tokei">
                             <span class="tfs_elmt_tokei_wrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-tokeitai-1.svg" class="tfs_elmt_the_tokei" alt="">
+                                <img src="common/images/common/elmt-tokeitai-1.svg" class="tfs_elmt_the_tokei" alt="">
                             </span>
             </div>
             <div class="tfs_elmt_skytree">
                             <span class="tfs_elmt_skytree_wrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-skytree-1.svg" class="tfs_elmt_the_skytree" alt="">
+                                <img src="common/images/common/elmt-skytree-1.svg" class="tfs_elmt_the_skytree" alt="">
                             </span>
             </div>
             <div class="tfs_elmt_otera">
                             <span class="tfs_elmt_otera_wrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-otera-1.svg" class="tfs_elmt_the_otera" alt="">
+                                <img src="common/images/common/elmt-otera-1.svg" class="tfs_elmt_the_otera" alt="">
                             </span>
             </div>
             <div class="tfs_elmt_jesuschrist">
                             <span class="tfs_elmt_jesuschrist_wrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-jesuschrist-1.svg" class="tfs_elmt_the_jesuschrist" alt="">
+                                <img src="common/images/common/elmt-jesuschrist-1.svg" class="tfs_elmt_the_jesuschrist" alt="">
                             </span>
             </div>
             <div class="tfs_elmt_butsu">
                             <span class="tfs_elmt_butsu_wrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-butsu-1.svg" class="tfs_elmt_the_butsu" alt="">
+                                <img src="common/images/common/elmt-butsu-1.svg" class="tfs_elmt_the_butsu" alt="">
                             </span>
             </div>
             <div class="tfs_elmt_green">
                             <span class="tfs_elmt_plant tfs_elmt_plant_1">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-plant-1.svg" class="tfs_elmt_the_plant" alt="">
+                                <img src="common/images/common/elmt-plant-1.svg" class="tfs_elmt_the_plant" alt="">
                             </span>
               <span class="tfs_elmt_plant tfs_elmt_plant_2">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-plant-1.svg" class="tfs_elmt_the_plant" alt="">
+                                <img src="common/images/common/elmt-plant-1.svg" class="tfs_elmt_the_plant" alt="">
                             </span>
               <span class="tfs_elmt_plant tfs_elmt_plant_3">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-plant-1.svg" class="tfs_elmt_the_plant" alt="">
+                                <img src="common/images/common/elmt-plant-1.svg" class="tfs_elmt_the_plant" alt="">
                             </span>
               <span class="tfs_elmt_plant tfs_elmt_plant_4">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-plant-1.svg" class="tfs_elmt_the_plant" alt="">
+                                <img src="common/images/common/elmt-plant-1.svg" class="tfs_elmt_the_plant" alt="">
                             </span>
               <span class="tfs_elmt_plant tfs_elmt_plant_5">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-plant-1.svg" class="tfs_elmt_the_plant" alt="">
+                                <img src="common/images/common/elmt-plant-1.svg" class="tfs_elmt_the_plant" alt="">
                             </span>
               <span class="tfs_elmt_plant tfs_elmt_plant_6">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-plant-1.svg" class="tfs_elmt_the_plant" alt="">
+                                <img src="common/images/common/elmt-plant-1.svg" class="tfs_elmt_the_plant" alt="">
                             </span>
             </div>
           </div>
@@ -151,48 +151,59 @@ if ( have_posts() ) :
           <div class="tfs_elmts_ground_content">
             <div class="tfs_elmt_the_ground">
                             <span class="tfs_elmt_the_ground_wrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-theroad-1.svg" class="tfs_elmt_the_road" alt="">
+                                <img src="common/images/common/elmt-theroad-1.svg" class="tfs_elmt_the_road" alt="">
                             </span>
             </div>
             <div class="tfs_elmts_on_the_ground_wrap">
-              <div class="tfs_elmt_ikastore">
+              <div class="tfs_elmt_ikastore is__pandding">
                                 <span class="tfs_elmt_ikastore_wrap">
                                     <span class="tfs_elmt_ikastr_ptrleft">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ikastore-3_building_parts-1.svg" class="tfs_elmt_the_ikastr_ptrleft" alt="">
+                                        <img src="common/images/common/elmt-ikastore-3_building_parts-1.svg" class="tfs_elmt_the_ikastr_ptrleft" alt="">
                                     </span>
                                     <span class="tfs_elmt_ikastr_ptrright">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ikastore-3_building_parts-2.svg" class="tfs_elmt_the_ikastr_ptrleft" alt="">
+                                        <img src="common/images/common/elmt-ikastore-3_building_parts-2.svg" class="tfs_elmt_the_ikastr_ptrleft" alt="">
                                     </span>
                                     <span class="tfs_elmt_ikastr_foot_2 tfs_elmt_ikastr_foot_2_left">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ikastore-3_building_main-6-foot-2.svg" class="tfs_elmt_the_ikastr_foot_2" alt="">
+                                        <img src="common/images/common/elmt-ikastore-3_building_main-6-foot-2.svg" class="tfs_elmt_the_ikastr_foot_2 tfs_elmt_the_ikastr_foot_2_left" alt="">
                                     </span>
                                     <span class="tfs_elmt_ikastr_foot_2 tfs_elmt_ikastr_foot_2_right">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ikastore-3_building_main-6-foot-2.svg" class="tfs_elmt_the_ikastr_foot_2" alt="">
+                                        <img src="common/images/common/elmt-ikastore-3_building_main-6-foot-2.svg" class="tfs_elmt_the_ikastr_foot_2 tfs_elmt_the_ikastr_foot_2_right" alt="">
                                     </span>
                                     <span class="tfs_elmt_ikastr_foot_1 tfs_elmt_ikastr_foot_1_left">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ikastore-3_building_main-6-foot-1.svg" class="tfs_elmt_the_ikastr_foot_1" alt="">
+                                        <img src="common/images/common/elmt-ikastore-3_building_main-6-foot-1.svg" class="tfs_elmt_the_ikastr_foot_1 tfs_elmt_the_ikastr_foot_1_left" alt="">
                                     </span>
                                     <span class="tfs_elmt_ikastr_foot_1 tfs_elmt_ikastr_foot_1_right">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ikastore-3_building_main-6-foot-1.svg" class="tfs_elmt_the_ikastr_foot_1" alt="">
+                                        <img src="common/images/common/elmt-ikastore-3_building_main-6-foot-1.svg" class="tfs_elmt_the_ikastr_foot_1 tfs_elmt_the_ikastr_foot_1_right" alt="">
                                     </span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ikastore-3_building_main-1.svg" class="tfs_elmt_the_building_main" alt="">
+                                    <img src="common/images/common/elmt-ikastore-3_building_main-1.svg" class="tfs_elmt_the_building_main" alt="">
                                     <span class="tfs_elmt_ikastr_boy">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ikastore-3_building_main-4-boy.svg" class="tfs_elmt_the_ikastr_boy" alt="">
+                                        <img src="common/images/common/elmt-ikastore-3_building_main-4-boy.svg" class="tfs_elmt_the_ikastr_boy" alt="">
                                     </span>
                                     <span class="tfs_elmt_ikastr_girl">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ikastore-3_building_main-5-girl.svg" class="tfs_elmt_the_ikastr_girl" alt="">
+                                        <img src="common/images/common/elmt-ikastore-3_building_main-5-girl.svg" class="tfs_elmt_the_ikastr_girl" alt="">
                                     </span>
-                                    <span class="tfs_elmt_ikastr_curtainleft">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ikastore-2_curtain-left-1-12.svg" class="tfs_elmt_the_ikastr_curtainleft" alt="">
+                                    <span class="tfs_elmt_ikastr_curtainleft is__pandding">
+                                        <img src="common/images/common/elmt-ikastore-2_curtain-left-1-12.svg" class="tfs_elmt_the_ikastr_curtainleft" alt="">
+                                        <img src="common/images/common/elmt-ikastore-2_curtain-left-1-1.svg" class="tfs_elmt_the_ikastr_curtainleft_other" alt="">
+                                        <img src="common/images/common/elmt-ikastore-2_curtain-left-1-2.svg" class="tfs_elmt_the_ikastr_curtainleft_other" alt="">
+                                        <img src="common/images/common/elmt-ikastore-2_curtain-left-1-3.svg" class="tfs_elmt_the_ikastr_curtainleft_other" alt="">
+                                        <img src="common/images/common/elmt-ikastore-2_curtain-left-1-4.svg" class="tfs_elmt_the_ikastr_curtainleft_other" alt="">
+                                        <img src="common/images/common/elmt-ikastore-2_curtain-left-1-5.svg" class="tfs_elmt_the_ikastr_curtainleft_other" alt="">
+                                        <img src="common/images/common/elmt-ikastore-2_curtain-left-1-6.svg" class="tfs_elmt_the_ikastr_curtainleft_other" alt="">
+                                        <img src="common/images/common/elmt-ikastore-2_curtain-left-1-7.svg" class="tfs_elmt_the_ikastr_curtainleft_other" alt="">
+                                        <img src="common/images/common/elmt-ikastore-2_curtain-left-1-8.svg" class="tfs_elmt_the_ikastr_curtainleft_other" alt="">
+                                        <img src="common/images/common/elmt-ikastore-2_curtain-left-1-9.svg" class="tfs_elmt_the_ikastr_curtainleft_other" alt="">
+                                        <img src="common/images/common/elmt-ikastore-2_curtain-left-1-10.svg" class="tfs_elmt_the_ikastr_curtainleft_other" alt="">
+                                        <img src="common/images/common/elmt-ikastore-2_curtain-left-1-11.svg" class="tfs_elmt_the_ikastr_curtainleft_other" alt="">
                                     </span>
-                                    <span class="tfs_elmt_ikastr_ika">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ika-1.svg" class="tfs_elmt_the_ikastr_ika" alt="">
+                                    <span class="tfs_elmt_ikastr_ika is__pandding">
+                                        <img src="common/images/common/elmt-ika-1.svg" class="tfs_elmt_the_ikastr_ika is__pandding" alt="">
                                     </span>
                                     <span class="tfs_elmt_ikastr_curtainright">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ikastore-2_curtain-right.svg" class="tfs_elmt_the_ikastr_curtainright" alt="">
+                                        <img src="common/images/common/elmt-ikastore-2_curtain-right.svg" class="tfs_elmt_the_ikastr_curtainright" alt="">
                                     </span>
                                     <span class="tfs_elmt_ikastr_sign">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ikastore-1_sign.svg" class="tfs_elmt_the_ikastr_sign" alt="">
+                                        <img src="common/images/common/elmt-ikastore-1_sign.svg" class="tfs_elmt_the_ikastr_sign" alt="">
                                     </span>
                                     <span class="tfs_elmt_ikastr_eyeleft">
                                         <svg class="tfs_elmt_ikastr_eyeleft_base tfs_elmt_ikastr_eye_base_color" viewbox="0 0 26 23">
@@ -220,80 +231,80 @@ if ( have_posts() ) :
               </div>
               <div class="tfs_elmt_walkpeople tfs_elmt_walklady">
                                 <span class="tfs_elmt_walkpeople_wrap tfs_elmt_walklady_wrap">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-walklady-1.svg" class="tfs_elmt_the_walkpeople tfs_elmt_the_walklady" alt="">
+                                    <img src="common/images/common/elmt-walklady-1.svg" class="tfs_elmt_the_walkpeople tfs_elmt_the_walklady" alt="">
                                 </span>
               </div>
               <div class="tfs_elmt_walkpeople tfs_elmt_walkman">
                                 <span class="tfs_elmt_walkpeople_wrap tfs_elmt_walkman_wrap">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-walkman-1.svg" class="tfs_elmt_the_walkpeople tfs_elmt_the_walkman" alt="">
+                                    <img src="common/images/common/elmt-walkman-1.svg" class="tfs_elmt_the_walkpeople tfs_elmt_the_walkman" alt="">
                                 </span>
               </div>
               <div class="tfs_elmt_ikauriko tfs_elmt_ikauriko_male">
                                 <span class="tfs_elmt_ikauriko_wrap tfs_elmt_ikauriko_male_wrap">
                                     <span class="tfs_elmt_ikauriko_hand tfs_elmt_ikauriko_male_hand">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ika-2_hand.svg" class="tfs_elmt_the_ikauriko_hand tfs_elmt_the_ikauriko_male_hand" alt="">
+                                        <img src="common/images/common/elmt-ika-2_hand.svg" class="tfs_elmt_the_ikauriko_hand tfs_elmt_the_ikauriko_male_hand" alt="">
                                     </span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ika-2_body.svg" class="tfs_elmt_the_ikauriko_body tfs_elmt_the_ikauriko_male_body" alt="">
+                                    <img src="common/images/common/elmt-ika-2_body.svg" class="tfs_elmt_the_ikauriko_body tfs_elmt_the_ikauriko_male_body" alt="">
                                 </span>
               </div>
               <div class="tfs_elmt_ikauriko tfs_elmt_ikauriko_female">
                                 <span class="tfs_elmt_ikauriko_wrap tfs_elmt_ikauriko_male_wrap">
                                     <span class="tfs_elmt_ikauriko_hand tfs_elmt_ikauriko_female_hand">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ika-3_hand.svg" class="tfs_elmt_the_ikauriko_hand tfs_elmt_the_ikauriko_female_hand" alt="">
+                                        <img src="common/images/common/elmt-ika-3_hand.svg" class="tfs_elmt_the_ikauriko_hand tfs_elmt_the_ikauriko_female_hand" alt="">
                                     </span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ika-3_body.svg" class="tfs_elmt_the_ikauriko_body tfs_elmt_the_ikauriko_male_body" alt="">
+                                    <img src="common/images/common/elmt-ika-3_body.svg" class="tfs_elmt_the_ikauriko_body tfs_elmt_the_ikauriko_male_body" alt="">
                                 </span>
               </div>
               <div class="tfs_elmt_drive tfs_elmt_drive_navy">
                                 <span class="tfs_elmt_drive_wrap tfs_elmt_drive_navy_wrap">
                                     <span class="tfs_elmt_driveexhust tfs_elmt_driveexhust_navy tfs_elmt_driveexhust_navy_2">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-drive-1_exhust.svg" class="tfs_elmt_the_driveexhust tfs_elmt_the_driveexhust_2 tfs_elmt_the_driveexhust_navy" alt="">
+                                        <img src="common/images/common/elmt-drive-1_exhust.svg" class="tfs_elmt_the_driveexhust tfs_elmt_the_driveexhust_navy tfs_elmt_the_driveexhust_2 tfs_elmt_the_driveexhust_navy_2" alt="">
                                     </span>
                                     <span class="tfs_elmt_driveexhust tfs_elmt_driveexhust_navy tfs_elmt_driveexhust_navy_1">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-drive-1_exhust.svg" class="tfs_elmt_the_driveexhust tfs_elmt_the_driveexhust_1 tfs_elmt_the_driveexhust_navy" alt="">
+                                        <img src="common/images/common/elmt-drive-1_exhust.svg" class="tfs_elmt_the_driveexhust tfs_elmt_the_driveexhust_navy tfs_elmt_the_driveexhust_1 tfs_elmt_the_driveexhust_navy_1" alt="">
                                     </span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-drive-1_body.svg" class="tfs_elmt_the_drive_body tfs_elmt_the_drive_navy_body" alt="">
+                                    <img src="common/images/common/elmt-drive-1_body.svg" class="tfs_elmt_the_drive_body tfs_elmt_the_drive_navy_body" alt="">
                                     <span class="tfs_elmt_drivetire tfs_elmt_drivetire_navy">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-drive-1_tire.svg" class="tfs_elmt_the_drivetire tfs_elmt_the_drivetire_navy" alt="">
+                                        <img src="common/images/common/elmt-drive-1_tire.svg" class="tfs_elmt_the_drivetire tfs_elmt_the_drivetire_navy" alt="">
                                     </span>
                                 </span>
               </div>
-              <div class="tfs_elmt_ikauruma">
+              <div class="tfs_elmt_ikauruma is__pandding">
                                 <span class="tfs_elmt_ikauruma_wrap elmt_uruma_wrap">
                                     <span class="tfs_elmt_ikauruma_lefthand elmt_uruma_lefthand">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-uruma-1_lefthand.svg" class="tfs_elmt_the_ikauruma_lefthand" alt="">
+                                        <img src="common/images/common/elmt-uruma-1_lefthand.svg" class="tfs_elmt_the_ikauruma_lefthand is__pandding" alt="">
                                     </span>
                                     <span class="tfs_elmt_ikauruma_righthand elmt_uruma_righthand">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-uruma-1_righthand.svg" class="tfs_elmt_the_ikauruma_righthand" alt="">
+                                        <img src="common/images/common/elmt-uruma-1_righthand.svg" class="tfs_elmt_the_ikauruma_righthand is__pandding" alt="">
                                     </span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-uruma-1_body.svg" class="tfs_elmt_the_ikauruma_body" alt="">
+                                    <img src="common/images/common/elmt-uruma-1_body.svg" class="tfs_elmt_the_ikauruma_body" alt="">
                                     <span class="tfs_elmt_ikauruma_dialogue elmt_uruma_dialog">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-uruma-1_dialogue.svg" class="tfs_elmt_the_ikauruma_dialogue" alt="">
+                                        <img src="common/images/common/elmt-uruma-1_dialogue.svg" class="tfs_elmt_the_ikauruma_dialogue" alt="">
                                     </span>
                                 </span>
               </div>
               <div class="tfs_elmt_petwalk">
                                 <span class="tfs_elmt_petwalk_wrap">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-petwalk-1.svg" class="tfs_elmt_the_petwalk" alt="">
+                                    <img src="common/images/common/elmt-petwalk-1.svg" class="tfs_elmt_the_petwalk" alt="">
                                 </span>
               </div>
               <div class="tfs_elmt_drive tfs_elmt_drive_ong">
                                 <span class="tfs_elmt_drive_wrap tfs_elmt_drive_ong_wrap">
                                     <span class="tfs_elmt_driveexhust tfs_elmt_driveexhust_ong tfs_elmt_driveexhust_ong_2">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-drive-1_exhust.svg" class="tfs_elmt_the_driveexhust tfs_elmt_the_driveexhust_2 tfs_elmt_the_driveexhust_ong" alt="">
+                                        <img src="common/images/common/elmt-drive-1_exhust.svg" class="tfs_elmt_the_driveexhust tfs_elmt_the_driveexhust_ong tfs_elmt_the_driveexhust_2 tfs_elmt_the_driveexhust_ong_2" alt="">
                                     </span>
                                     <span class="tfs_elmt_driveexhust tfs_elmt_driveexhust_ong tfs_elmt_driveexhust_ong_1">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-drive-1_exhust.svg" class="tfs_elmt_the_driveexhust tfs_elmt_the_driveexhust_1 tfs_elmt_the_driveexhust_ong" alt="">
+                                        <img src="common/images/common/elmt-drive-1_exhust.svg" class="tfs_elmt_the_driveexhust tfs_elmt_the_driveexhust_ong tfs_elmt_the_driveexhust_1 tfs_elmt_the_driveexhust_ong_1" alt="">
                                     </span>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-drive-2_body.svg" class="tfs_elmt_the_drive_body tfs_elmt_the_drive_ong_body" alt="">
+                                    <img src="common/images/common/elmt-drive-2_body.svg" class="tfs_elmt_the_drive_body tfs_elmt_the_drive_ong_body" alt="">
                                     <span class="tfs_elmt_drivetire tfs_elmt_drivetire_ong">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-drive-1_tire.svg" class="tfs_elmt_the_drivetire tfs_elmt_the_drivetire_ong" alt="">
+                                        <img src="common/images/common/elmt-drive-1_tire.svg" class="tfs_elmt_the_drivetire tfs_elmt_the_drivetire_ong" alt="">
                                     </span>
                                 </span>
               </div>
-              <div class="tfs_elmt_ikaalien">
+              <div class="tfs_elmt_ikaalien is__pandding">
                                 <span class="tfs_elmt_ikaalien_wrap">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-ika-4.svg" class="tfs_elmt_the_ikaalien" alt="">
+                                    <img src="common/images/common/elmt-ika-4.svg" class="tfs_elmt_the_ikaalien" alt="">
                                 </span>
               </div>
             </div>
@@ -303,11 +314,11 @@ if ( have_posts() ) :
         <!-- elements fake couple -->
         <div class="tfs_elmts_fake_couple">
           <div class="tfs_elmts_fakecouple_content">
-            <div class="tfs_elmt_couple">
+            <div class="tfs_elmt_couple is__pandding">
                             <span class="tfs_elmt_couple_wrap">
-                                <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-couple-1_male.svg" class="tfs_elmt_the_couple_male" alt="">
+                                <img src="common/images/common/elmt-couple-1_male.svg" class="tfs_elmt_the_couple_male" alt="">
                                 <span class="tfs_elmt_couple_female">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-couple-2_female.svg" class="tfs_elmt_the_couple_female" alt="">
+                                    <img src="common/images/common/elmt-couple-2_female.svg" class="tfs_elmt_the_couple_female" alt="">
                                 </span>
                             </span>
             </div>
