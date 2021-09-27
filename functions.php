@@ -185,6 +185,8 @@ function add_class_page_slug($classes) {
     $classes[] = 'inner_blog';
   }elseif(is_post_type_archive('snack_journeys') || is_singular('snack_journeys')) {
     $classes[] = 'inner_journey';
+  }elseif(is_post_type_archive('allstars') || is_singular('allstars')) {
+    $classes[] = 'inner_allstars';
   }
   return $classes;
 }
