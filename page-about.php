@@ -15,14 +15,8 @@
         </div>
       </div>
       <div class="inner_content_wrap stage_show_here">
-        <ul class="the_breadcrumbs w_max1366">
-          <li class="breadcrumbs_list">
-            <a href="/" class="breadcrumbs_link mover_link cmn_link_unit">top</a>
-          </li>
-          <li class="breadcrumbs_list">
-            <a href="../about" class="breadcrumbs_link mover_link cmn_link_unit">ハレリーについて</a>
-          </li>
-        </ul>
+        <?php output_breadcrumb(); ?>
+
         <div class="inner_content">
           <div class="stage_wrap w_max1366">
             <div class="the_halery_stage">
@@ -579,7 +573,7 @@
                 </p>
                 <p class="abt_cmpy_ol_list">
                   <span class="abt_cmpy_ol_list_th f__16 f__ln__30 f__wt__6">所在地</span>
-                  <span class="abt_cmpy_ol_list_td f__ln__30"><?php echo esc_html(get_field('address', 'option')); ?>
+                  <span class="abt_cmpy_ol_list_td f__ln__30"><?php echo esc_html(get_field('address', 'option')); ?><br>
                                     TEL：<?php echo esc_html(get_field('tel_num', 'option')); ?>　FAX：<?php echo esc_html(get_field('fax_num', 'option')); ?></span>
                 </p>
                 <p class="abt_cmpy_ol_list">
