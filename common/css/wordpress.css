@@ -67,6 +67,32 @@
     cursor: default;
 }
 
+.salts_item_desc {
+    white-space: normal;
+}
+
+.salts_item_desc p + p {
+    margin-top: 1em;
+}
+
+.wysiwyg_format {
+    white-space: normal;
+}
+.wysiwyg_format h2, .wysiwyg_format h3, .wysiwyg_format h4, .wysiwyg_format h5, .wysiwyg_format h6 {
+    margin: 1em 0;
+}
+
+.wysiwyg_format img {
+    height: auto;
+}
+
+.wysiwyg_format p {
+    margin: 1em 0;
+}
+
+.wysiwyg_format br {
+    display: block !important;
+}
 
 @media screen and (max-width: 641px) {
     .cmn_blog_pager_custom > .page-numbers {
