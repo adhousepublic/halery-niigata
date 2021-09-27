@@ -333,7 +333,7 @@ if ( have_posts() ) :
         <?php echo do_shortcode("[instagram-feed]"); ?>
       </div>
       <div class="top_insta_container w_max1024 w960_in_1024 sp_visible">
-        <?php echo do_shortcode("[instagram-feed num=3]"); ?>
+        <?php echo do_shortcode("[instagram-feed num=3 cols=3]"); ?>
       </div>
     </div>
     <div class="top_concept">
