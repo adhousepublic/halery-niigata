@@ -177,3 +177,15 @@ function custom_pagination_html( $template ) {
 }
 add_filter('navigation_markup_template','custom_pagination_html');
 
+function add_class_page_slug($classes) {
+  if( is_page() ) {
+    $page = get_post( get_the_ID() );
+    $classes[] = 'inner_'. $page->post_name;
+  }elseif(is_home() || is_singular('post') || is_category()) {
+    $classes[] = 'inner_blog';
+  }elseif(is_post_type_archive('snack_journeys') || is_singular('snack_journeys')) {
+    $classes[] = 'inner_journey';
+  }
+  return $classes;
+}
+add_filter('body_class', 'add_class_page_slug');
