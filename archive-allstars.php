@@ -107,7 +107,7 @@
                     <?php
                     $slide_num = 1;
                     while(have_rows('item_img')): the_row(); ?>
-                      <li class="salts_item_img_list <?php if($slide_num = 1) { echo 'salts_item_img_default'; ?>" id="salts-itmimg-<?php echo esc_attr($item_num); ?>-<?php echo esc_attr($slide_num); ?>">
+                      <li class="salts_item_img_list <?php if($slide_num = 1) { echo 'salts_item_img_default'; } ?>" id="salts-itmimg-<?php echo esc_attr($item_num); ?>-<?php echo esc_attr($slide_num); ?>">
                         <img src="<?php echo esc_url(get_sub_field('img')) ?>" alt="">
                       </li>
                     <?php
