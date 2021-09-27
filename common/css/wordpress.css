@@ -94,6 +94,14 @@
     display: block !important;
 }
 
+.sp_visible {
+    display: none;
+}
+
+.sp_none {
+    display: block;
+}
+
 @media screen and (max-width: 641px) {
     .cmn_blog_pager_custom > .page-numbers {
         --cmn-blog-pager-base-width: 28px;
@@ -122,4 +130,13 @@
         margin: 0;
         line-height: 28px;
     }
+
+    .sp_visible {
+        display: block;
+    }
+
+    .sp_none {
+        display: none;
+    }
+
 }
