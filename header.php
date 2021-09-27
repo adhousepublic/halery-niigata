@@ -82,7 +82,7 @@
   <!-- //Global site tag (gtag.js) - Google Analytics for Adpublic -->
 </head>
 
-<body <?php if(is_front_page()) { ?>id="page-top"<?php } ?> <?php body_class(); ?>>
+<body <?php if(is_front_page()) { ?>id="page-top"<?php }else{ ?>id="page-inner"<?php } ?> <?php body_class(); ?>>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4PD52J"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
