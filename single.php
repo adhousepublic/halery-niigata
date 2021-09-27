@@ -41,9 +41,13 @@
             </div>
           </article>
           <div class="cmn_blog_detail_footer">
-            <a href="<?php echo esc_url( home_url( '/articles/' ) ); ?>" class="cmn_blog_detail_backlist mover_link cmn_link_unit">
-              <span class="cmn_blog_detbklst_text f__16 f__wt__8 f__ltr__2">一覧へ戻る</span>
-              <span class="cmn_blog_detbklst_icon font_en_roboto f__36 f__wt__1 font_en_roboto">></span>
+            <a href="<?php echo esc_url( home_url( '/articles/' ) ); ?>" class="cmn_blog_detail_backlist cmn_btn_type_1 mover_link cmn_link_unit">
+              <span class="cmn_btn_type_1_text f__16 f__wt__8 f__ltr__2">一覧へ戻る</span>
+              <span class="cmn_btn_type_1_icon">
+                  <svg class="cmn_btn_arrow_tp_1" viewbox="0 0 38 9">
+                      <use xlink:href="#use-cmn-arrow-1" class="cmn_btn_the_arrow_tp_1"></use>
+                  </svg>
+              </span>
             </a>
           </div>
         </article>
