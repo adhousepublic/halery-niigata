@@ -2356,7 +2356,7 @@ img.tfs_elmt_the_road {
 }
 .top_concept_bgimage::before,
 .top_concept_bgimage::after {
-  bottom: 0;
+  bottom: -20px;
   z-index: var(--layer_index_regular);
   background-position: center;
   background-repeat: no-repeat;
@@ -2923,19 +2923,19 @@ img.tfs_elmt_the_road {
       flex-wrap: wrap;
   width: 50%;
   /* height: var(--top-franchise-list-base-height); */
-  padding-right: 5%;
+  padding-right: 2.5%;
   padding-top: var(--top-franchise-list-base-pad);
   padding-bottom: var(--top-franchise-list-base-pad);
   margin-bottom: var(--top-franchise-list-base-pad);
-  background-image: url(../images/common/pngelmt-ika_silhouette-1.png);
+  /* background-image: url(../images/common/pngelmt-ika_silhouette-1.png);
   background-repeat: no-repeat;
-  background-position: left var(--top-franchise-list-base-pad);
+  background-position: left var(--top-franchise-list-base-pad); */
   /* background-position: left center; */
-  background-size: var(--top-franchise-list-shape-base-width) auto;
+  /* background-size: var(--top-franchise-list-shape-base-width) auto; */
 }
 .top_franchise_list_wrap {
   width: 100%;
-  padding-left: calc(1.5 * var(--top-franchise-list-shape-base-width));
+  /* padding-left: calc(1.5 * var(--top-franchise-list-shape-base-width)); */
 }
 .top_franchise_shop_name,
 .top_franchise_shop_location,
@@ -2947,14 +2947,14 @@ img.tfs_elmt_the_road {
 }
 .top_franchise_shop_info {
   display: inline-block;
-  margin-right: 2.5%;
+  margin-right: 1.5%;
   position: relative;
 }
 .top_franchise_shop_name,
 .top_franchise_shop_location {
   display: inline-block;
 }
-.top_franchise_shop_name {
+/* .top_franchise_shop_name {
   margin-right: 5px;
 }
 .top_franchise_shop_location .quotes_typ_5::before {
@@ -2962,14 +2962,14 @@ img.tfs_elmt_the_road {
 }
 .top_franchise_shop_location .quotes_typ_5::after {
   margin-left: 2.5px;
-}
+} */
 .top_franchise_shop_link,
 .top_franchise_shop_map {
   text-decoration: underline;
   font-weight: 800;
 }
 .top_franchise_shop_link {
-  margin-right: 2.5%;
+  margin-right: 1.5%;
 }
 a.top_franchise_shop_link,
 a.top_franchise_shop_map {
