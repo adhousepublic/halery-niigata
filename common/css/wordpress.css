@@ -182,6 +182,47 @@
         width: 100%;
         padding: 20px 0;
     }
+
+    .abt_msg_wrap {
+        flex-direction: column;
+    }
+
+    .abt_msg_content,
+    .abt_msg_img_group {
+        width: 100%;
+        max-width: none;
+    }
+
+    .abt_msg_caption,
+    .abt_srv_caption,
+    .abt_cmpy_caption {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .abt_msg_img_group {
+        position: relative;
+    }
+
+    .abt_msg_sub_caption {
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .abt_msg_img_lists {
+        flex-direction: row;
+    }
+
+    .abt_msg_img_the_list {
+        padding-bottom: calc(100% /3);
+        margin-right: 5px;
+        margin-bottom: 0;
+    }
+
+    .abt_msg_img_the_list:last-child {
+        margin-right: 0;
+    }
+
 }
 
 /* //MARK: 960 */
@@ -238,6 +279,39 @@
         margin-left: 0;
     }
 
+    .abt_msg_caption {
+        width: 50%;
+    }
+
+    .abt_srv_caption {
+        width: 90%;
+    }
+
+    .abt_cmpy_caption {
+        width: 40%;
+    }
+
+    .abt_srv_list,
+    .abt_srv_list_reverse {
+        flex-direction: column;
+    }
+
+    .abt_srv_list::after,
+    .abt_srv_list_reverse::after {
+        left: -20px;
+        right: -20px;
+        top: -20px;
+        height: 80%;
+    }
+
+    .abt_srv_list_content,
+    .abt_srv_list_img {
+        width: 100%;
+    }
+
+    .abt_srv_list_content {
+        margin-bottom: 30px;
+    }
 
 }
 
