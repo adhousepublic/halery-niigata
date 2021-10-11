@@ -312,6 +312,20 @@
         margin-bottom: 30px;
     }
 
+    .abt_cmpy_ol_list {
+        flex-direction: column;
+    }
+
+    .abt_cmpy_ol_list_th {
+        width: 100%;
+        max-width: none;
+        margin-right: 0;
+    }
+
+    .abt_cmpy_ol_list_td {
+        width: 100%;
+    }
+
 }
 
 /* //MARK: 414 */
