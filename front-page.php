@@ -605,7 +605,7 @@ if ( have_posts() ) :
 
         // ループ
         if ( $the_query->have_posts() ) : ?>
-        <ul class="top_franchise_group f__18 f__wt__5">
+        <ul class="top_franchise_group f__16 f__wt__5">
         <?php
           while ( $the_query->have_posts() ) : $the_query->the_post();
           $clients_link = get_field('link_url');

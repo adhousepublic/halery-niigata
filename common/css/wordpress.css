@@ -102,6 +102,138 @@
     display: block;
 }
 
+@charset "UTF-8";
+/* //MARK: H900 */
+@media screen and (max-height: 900px) {
+}
+/* //MARK: H768 */
+@media screen and (max-height: 768px) {
+}
+
+/* //MARK: 2080 */
+@media screen and (min-width: 2080px) {
+
+    /*----------------------------------------{ header }---*/
+    /*----------------------------------------{ header aside }---*/
+    /*----------------------------------------{ nav }---*/
+    /*----------------------------------------{ footer }---*/
+    /*----------------------------------------{ top }---*/
+    /*---- top - first scene ---*/
+    /* top - first scene (SVG element) */
+    /* top - first scene (SVG element - sky) */
+    /* top - first scene (SVG element - behindground) */
+    /* top - first scene (SVG element - ground) */
+    /* top - first scene (SVG element - fake couple) */
+    /*---- top - instagram ---*/
+    /*---- top - concept ---*/
+    /*---- top - topic & campaign slider ---*/
+    /*---- top - topic item's feature ---*/
+    /*---- top - franchise ---*/
+    /*---- top - recommended ---*/
+    /*---- top - blog ---*/
+    /*----------------------------------------{ inner - common }---*/
+    /*----------------------------------------{ inner - about }---*/
+    /* stage-1 */
+    /* //stage-1 */
+    /* stage-2 */
+    /* //stage-2 */
+    /* stage-3 */
+    /* //stage-3 */
+    /* stage-4 */
+    /* //stage-4 */
+    /* stage-5 */
+    /* //stage-5 */
+    /* stage-6 */
+    /* //stage-6 */
+    /* stage-7 */
+    /* //stage-7 */
+    /* stage-8 */
+    /* //stage-8 */
+    /*----------------------------------------{ inner - allstars }---*/
+    /*----------------------------------------{ inner - blog }---*/
+    /*----------------------------------------{ inner - journey }---*/
+
+}
+
+/* //MARK: 1680 */
+@media screen and (max-width: 1680px) {
+}
+
+/* //MARK: 1366 */
+@media screen and (max-width: 1366px) {
+}
+
+/* //MARK: 1280 */
+@media screen and (max-width: 1281px) {
+}
+
+/* //MARK: 1024 *//*iPad PRO 12.9" up"*/
+@media screen and (max-width: 1025px) {
+    .salts_thumb_list {
+        width: calc(100% / 3);
+    }
+
+    .salts_item_list {
+        flex-direction: column;
+    }
+
+    .salts_item_info,
+    .salts_item_images {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .abt_msg_wrap {
+        flex-direction: column;
+    }
+
+    .abt_msg_content,
+    .abt_msg_img_group {
+        width: 100%;
+        max-width: none;
+    }
+
+    .abt_msg_caption,
+    .abt_srv_caption,
+    .abt_cmpy_caption {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .abt_msg_img_group {
+        position: relative;
+    }
+
+    .abt_msg_sub_caption {
+        max-width: 300px;
+        margin: 20px auto;
+    }
+
+    .abt_msg_img_lists {
+        flex-direction: row;
+    }
+
+    .abt_msg_img_the_list {
+        padding-bottom: calc(100% /3);
+        margin-right: 5px;
+        margin-bottom: 0;
+    }
+
+    .abt_msg_img_the_list:last-child {
+        margin-right: 0;
+    }
+
+}
+
+/* //MARK: 960 */
+@media screen and (max-width: 961px) {
+}
+
+/* //MARK: 768 *//*iPad regular type"*/
+@media screen and (max-width: 769px) {
+}
+
+/* //MARK: 640 */
 @media screen and (max-width: 641px) {
     .cmn_blog_pager_custom > .page-numbers {
         --cmn-blog-pager-base-width: 28px;
@@ -139,4 +271,67 @@
         display: none;
     }
 
+    .salts_thumb_list {
+        width: calc(100% / 2);
+    }
+
+    .salts_item_link {
+        margin-left: 0;
+    }
+
+    .abt_msg_caption {
+        width: 50%;
+    }
+
+    .abt_srv_caption {
+        width: 90%;
+    }
+
+    .abt_cmpy_caption {
+        width: 40%;
+    }
+
+    .abt_srv_list,
+    .abt_srv_list_reverse {
+        flex-direction: column;
+    }
+
+    .abt_srv_list::after,
+    .abt_srv_list_reverse::after {
+        left: -20px;
+        right: -20px;
+        top: -20px;
+        height: 80%;
+    }
+
+    .abt_srv_list_content,
+    .abt_srv_list_img {
+        width: 100%;
+    }
+
+    .abt_srv_list_content {
+        margin-bottom: 30px;
+    }
+
 }
+
+/* //MARK: 414 */
+@media screen and (max-width: 415px) {
+}
+
+/* //MARK: 375 */
+@media screen and (max-width: 389px) {
+}
+
+/* //MARK: 320 *//*iPhone or under 4.2"*/
+@media screen and (max-width: 321px) {
+}
+
+/* //MARK: H736 *//*iPhone plus series(6~8)*/
+@media screen and (max-height: 767px) {
+}
+
+/* //MARK: H667 *//*iPhone 6~8*/
+@media screen and (max-height: 668px) {
+}
+

@@ -17,8 +17,8 @@ $(document).ready(function(){
             });
             $('.salts_call').on({
                 click: function () {
-                    var snackshowHere = $('.salts_item_group').innerHeight();
-                    $('html, body, .wrapper').stop().animate({ scrollTop: snackshowHere }, 250);
+                    var snackshowHere = $('.salts_item_group').offset();
+                    $('html, body, .wrapper').stop().animate({ scrollTop: snackshowHere.top }, 250);
                     return false;
                 }
             });
