@@ -95,11 +95,19 @@
 }
 
 .sp_visible {
-    display: none;
+    display: none !important;
 }
 
 .sp_none {
-    display: block;
+    display: block !important;
+}
+
+.stage_1_desc_dailogue-sp {
+    display: none !important;
+}
+
+.stage_desc_text {
+    white-space: normal;
 }
 
 /* //MARK: H900 */
@@ -222,6 +230,34 @@
         margin-right: 0;
     }
 
+    .stage_1_desc_dailogue-sp {
+        display: block !important;
+    }
+
+    .stage_1_desc_dailogue-pc {
+        display: none !important;
+    }
+
+    .stage_1_desc {
+        top: 15%;
+        left: auto;
+        right: 10%;
+    }
+
+    .stage_1_desc_text {
+        right: 23%;
+        top: 10%;
+    }
+
+    .stage_4_desc_2,
+    .stage_3_desc_2 {
+        width: auto;
+    }
+
+    .stage_desc_text {
+        line-height: 1.8em;
+    }
+
 }
 
 /* //MARK: 960 */
@@ -263,11 +299,11 @@
     }
 
     .sp_visible {
-        display: block;
+        display: block !important;
     }
 
     .sp_none {
-        display: none;
+        display: none !important;
     }
 
     .salts_thumb_list {
@@ -324,6 +360,87 @@
 
     .abt_cmpy_ol_list_td {
         width: 100%;
+    }
+
+    .stage_wrap {
+        --stage-main-base-height: 100vh;
+        --stage-slide-nav-base-width: 50px;
+    }
+
+    .stage_desc_text {
+        font-size: 3vw;
+    }
+
+    .stage_1_ikauruma {
+        width: 30%;
+    }
+
+    .stage_1_desc {
+        width: 50%;
+        top: 10%;
+        right: 18%;
+    }
+
+    .stage_1_desc_text {
+        right: 26%;
+    }
+
+    .stage_caption,
+    .stage_description {
+        top: 10%;
+    }
+
+    .stage_2_desc_2 {
+        width: auto;
+    }
+
+    .stage_2_halery {
+        width: 30%;
+        left: 14%;
+    }
+
+    .stage_3_desc_2 {
+        width: auto;
+    }
+
+    .stage_3_halery {
+        width: 40%;
+        left: 28%;
+    }
+
+    .stage_4_halery {
+        width: 30%;
+        bottom: 2%;
+    }
+
+    .stage_5_halery {
+        width: 80%;
+    }
+
+    .stage_5_desc {
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .stage_6_halery {
+        right: 50%;
+        transform: translateX(50%);
+        width: 80%;
+    }
+
+    .stage_7_halery {
+        width: 60%;
+        left: 50%;
+        top: auto;
+        transform: translateX(-50%);
+        bottom: 3%;
+    }
+
+    .stage_8_halery {
+        width: 23%;
+        left: 5%;
+        top: auto;
+        bottom: 13%;
     }
 
 }

@@ -28,12 +28,14 @@
                       <img src="<?php echo get_template_directory_uri(); ?>/common/images/about/pngelmt-scene_1-parts-1.png" class="d_img" alt="">
                     </h2>
                     <p class="stage_description stage_1_desc">
-                                        <span class="stage_desc_text stage_1_desc_text f_writing_rl f__ln__36 f__ltr__min f__wt__8">寄ってらっしゃい見てらっしゃい！
-                                            ハレリー劇場へようこそ。
-                                            私たちハレリーの誕生秘話とともに、
+                                        <span class="stage_desc_text stage_1_desc_text f_writing_rl f__ln__36 f__ltr__min f__wt__8">
+                                            寄ってらっしゃい見てらっしゃい！<br>
+                                            ハレリー劇場へようこそ。<br>
+                                            私たちハレリーの誕生秘話とともに、<br>
                                             当ブランドの歩みについてお話しします。
                                         </span>
-                      <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-dialogue-1.svg" class="stage_1_desc_dailogue" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-dialogue-1.svg" class="stage_1_desc_dailogue stage_1_desc_dailogue-pc" alt="">
+                      <img src="<?php echo get_template_directory_uri(); ?>/common/images/common/elmt-dialogue-2.svg" class="stage_1_desc_dailogue stage_1_desc_dailogue-sp" alt="">
                     </p>
                     <div class="stage_1_ikauruma">
                                         <span class="stage_1_ikauruma_wrap elmt_uruma_wrap">
@@ -60,18 +62,19 @@
                       <img src="<?php echo get_template_directory_uri(); ?>/common/images/about/stage-caption-1.png" class="d_img" alt="">
                     </h2>
                     <p class="stage_description stage_2_desc stage_2_desc_1">
-                                        <span class="stage_desc_text stage_2_desc_text f_writing_rl f__ltr__2 f__wt__8">創業は今から約<i class="stage_desc_text_rotate stage_desc_text_rotate_single">40</i> 年前。
-                                            東京で行商を手伝っていた初代が故郷の新潟へＵターンし、
-                                            その経験を生かして、塩蔵ワカメの行商をスタートします。
-                                            このワカメの販売が、ハレリーの始まりなのです。
-                                            人見知りの激しい初代でしたが、
-                                            思いきって社会の荒波に飛び込み
+                                        <span class="stage_desc_text stage_2_desc_text f_writing_rl f__ltr__2 f__wt__8">
+                                            創業は今から約<i class="stage_desc_text_rotate stage_desc_text_rotate_single">40</i> 年前。<br>
+                                            東京で行商を手伝っていた初代が故郷の新潟へＵターンし、<br>
+                                            その経験を生かして、塩蔵ワカメの行商をスタートします。<br>
+                                            このワカメの販売が、ハレリーの始まりなのです。<br>
+                                            人見知りの激しい初代でしたが、<br>
+                                            思いきって社会の荒波に飛び込み<br>
                                             さまざまな企業や学校をまわりました。
                                         </span>
                     </p>
                     <p class="stage_description stage_2_desc stage_2_desc_2">
-                                        <span class="stage_desc_text stage_2_desc_text f_writing_rl f__ltr__2 f__wt__8">ハレリーの語源は｢ハレルヤ｣。
-                                            感謝や賛美を表現したこの社名が
+                                        <span class="stage_desc_text stage_2_desc_text f_writing_rl f__ltr__2 f__wt__8">ハレリーの語源は｢ハレルヤ｣。<br>
+                                            感謝や賛美を表現したこの社名が<br>
                                             事業の前途を晴れやかに照らすのでした。
                                         </span>
                     </p>
@@ -89,16 +92,16 @@
                       <img src="<?php echo get_template_directory_uri(); ?>/common/images/about/stage-caption-2.png" class="d_img" alt="">
                     </h2>
                     <p class="stage_description stage_3_desc stage_3_desc_1">
-                                        <span class="stage_desc_text stage_3_desc_text f_writing_rl f__ltr__2 f__wt__8">そのうち家業を手伝い始めた息子の二代目(現代表)。
-                                            初代と共にワカメを販売しつつも、
-                                            もっと魅力的な商品を求めた末に
+                                        <span class="stage_desc_text stage_3_desc_text f_writing_rl f__ltr__2 f__wt__8">そのうち家業を手伝い始めた息子の二代目(現代表)。<br>
+                                            初代と共にワカメを販売しつつも、<br>
+                                            もっと魅力的な商品を求めた末に<br>
                                             問屋さんから紹介された｢おつまみ｣に辿り着きます。
                                         </span>
                     </p>
                     <p class="stage_description stage_3_desc stage_3_desc_2">
-                                        <span class="stage_desc_text stage_3_desc_text f_writing_rl f__ltr__2 f__wt__8">おつまみ販売の反応がよく、やがておつまみが主力商品に。
-                                            あまり世に知られていない美味しいおつまみが
-                                            全国にたくさんあることを知ったハレリーは、
+                                        <span class="stage_desc_text stage_3_desc_text f_writing_rl f__ltr__2 f__wt__8">おつまみ販売の反応がよく、やがておつまみが主力商品に。<br>
+                                            あまり世に知られていない美味しいおつまみが<br>
+                                            全国にたくさんあることを知ったハレリーは、<br>
                                             この美味しさを世に届けることを決意したのでした。
                                         </span>
                     </p>
@@ -116,22 +119,21 @@
                       <img src="<?php echo get_template_directory_uri(); ?>/common/images/about/stage-caption-3.png" class="d_img" alt="">
                     </h2>
                     <p class="stage_description stage_4_desc stage_4_desc_1">
-                                        <span class="stage_desc_text stage_4_desc_text f_writing_rl f__ltr__2 f__wt__8">順調に思われたおつまみ販売ですが、
-                                            初代に負けず劣らずの人見知りに成長した二代目は
-                                            魅力的なおつまみを販売するも
-                                            人前で話をすると顔が真っ赤になる始末。
-                                            必要不可欠なお客様の呼び込みにも
+                                        <span class="stage_desc_text stage_4_desc_text f_writing_rl f__ltr__2 f__wt__8">順調に思われたおつまみ販売ですが、<br>
+                                            初代に負けず劣らずの人見知りに成長した二代目は<br>
+                                            魅力的なおつまみを販売するも<br class="sp_none">
+                                            人前で話をすると顔が真っ赤になる始末。<br>
+                                            必要不可欠なお客様の呼び込みにも<br class="sp_none">
                                             ドギマギしてしまいました。
                                         </span>
                     </p>
                     <p class="stage_description stage_4_desc stage_4_desc_2">
-                                        <span class="stage_desc_text stage_4_desc_text f_writing_rl f__ltr__2 f__wt__8">｢何かうまい方法はないものか｣と悩んでいると、
-                                            目の前に現れた人気の名刺屋さんが一言。
-                                            ｢イカの姿だと、勝手に声をかけてもらえるよ｣
-                                            予言的なアドバイスをされた二代目は
-                                            ｢だったらイカに変身してみようかな〜｣と
-                                            あっさりその気になりました。
-
+                                        <span class="stage_desc_text stage_4_desc_text f_writing_rl f__ltr__2 f__wt__8">｢何かうまい方法はないものか｣と悩んでいると、<br>
+                                            目の前に現れた人気の名刺屋さんが一言。<br>
+                                            ｢イカの姿だと、勝手に声をかけてもらえるよ｣<br>
+                                            予言的なアドバイスをされた二代目は<br>
+                                            ｢だったらイカに変身してみようかな〜｣と<br class="sp_none">
+                                            あっさりその気になりました。<br><br>
                                             そして…
                                         </span>
                     </p>
@@ -145,7 +147,7 @@
                 <section class="stage_scene stage_scene_5" dir="ltr">
                   <div class="stage_content stage_scene_5_content">
                     <h2 class="stage_description stage_5_desc">
-                                        <span class="stage_desc_text stage_5_desc_text f_writing_rl f__ln__36 f__ltr__2 f__wt__8">人見知りを吹き飛ばす、
+                                        <span class="stage_desc_text stage_5_desc_text f_writing_rl f__ln__36 f__ltr__2 f__wt__8">人見知りを吹き飛ばす、<br>
                                             イカ人間が誕生したのでした。
                                         </span>
                     </h2>
@@ -166,39 +168,40 @@
                       <img src="<?php echo get_template_directory_uri(); ?>/common/images/about/stage-caption-4.png" class="d_img" alt="">
                     </h2>
                     <p class="stage_description stage_6_desc stage_6_desc_1">
-                                        <span class="stage_desc_text stage_6_desc_text f_writing_rl f__ln__36 f__ltr__2 f__wt__8">こうして唐突に誕生したイカ人間でしたが、
-                                            いい変化はすぐに訪れます。
-                                            最初はイベントで遠巻きに様子をうかがっていた人々が、
-                                            ヘンテコでもの珍しい風貌のイカ人間に引き寄せられ、
-                                            ｢○○○○にいましたよね｣とよく話しかけられるように。
-                                            そこで判明したのは
-                                            ｢オレ、人見知りだけど、話好きなんだ｣という性格。
-                                            そんなこじらせ系のイカ人間も、今では小学生に大人気。
-                                            ただし<i class="stage_desc_text_rotate stage_desc_text_rotate_single">1</i> 〜<i class="stage_desc_text_rotate stage_desc_text_rotate_single">2</i> 歳のこどもの半数は
-                                            未確認生物にギャン泣きするので、
+                                        <span class="stage_desc_text stage_6_desc_text f_writing_rl f__ln__36 f__ltr__2 f__wt__8">こうして唐突に誕生したイカ人間でしたが、<br>
+                                            いい変化はすぐに訪れます。<br>
+                                            最初はイベントで遠巻きに様子をうかがっていた人々が、<br>
+                                            ヘンテコでもの珍しい風貌のイカ人間に引き寄せられ、<br>
+                                            ｢○○○○にいましたよね｣とよく話しかけられるように。<br>
+                                            そこで判明したのは<br>
+                                            ｢オレ、人見知りだけど、話好きなんだ｣という性格。<br>
+                                            そんなこじらせ系のイカ人間も、今では小学生に大人気。<br>
+                                            ただし<i class="stage_desc_text_rotate stage_desc_text_rotate_single">1</i> 〜<i class="stage_desc_text_rotate stage_desc_text_rotate_single">2</i> 歳のこどもの半数は<br>
+                                            未確認生物にギャン泣きするので、<br>
                                             そっと人間の姿に戻ることもしばしばです。
                                         </span>
                     </p>
                   </div>
                   <div class="stage_6_halery">
                                     <span class="stage_6_halery_wrap">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/about/stage-graph-5-1.png" class="stage_6_the_graph" alt="あのイカ、前も見たわ何者かしら…">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/about/stage-graph-5-1.png" class="stage_6_the_graph sp_none" alt="あのイカ、前も見たわ何者かしら…">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/common/images/about/stage-graph-5-1-2.png" class="stage_6_the_graph sp_visible" alt="あのイカ、前も見たわ何者かしら…">
                                     </span>
                   </div>
                 </section>
                 <section class="stage_scene stage_scene_7" dir="ltr">
                   <div class="stage_content stage_scene_7_content">
                     <h2 class="stage_description stage_7_desc">
-                                        <span class="stage_desc_text stage_7_desc_text f_writing_rl f__ln__36 f__ltr__2 f__wt__8">イカの頭に手ごたえを感じ、
-                                            さらに奥の手アイテムを編み出します。
-                                            その名は｢試食棒｣。
-                                            試食コーナーで自然にできてしまう、お客様との距離は約<i class="stage_desc_text_rotate stage_desc_text_rotate_single">2</i> ｍ。
-                                            声をかけられないよう設けられた心と体の溝を、
-                                            埋める道具を発明したのです。
-                                            この棒は長い柄杓のようなもの。
-                                            ディスタンスは保ちつつ、棒だけがニョキニョキとお客様に近づき、
-                                            好奇心から試食に手を出してしまうという仕掛けです。
-                                            イカの姿で注目を集め、試食棒で回収する。
+                                        <span class="stage_desc_text stage_7_desc_text f_writing_rl f__ln__36 f__ltr__2 f__wt__8">イカの頭に手ごたえを感じ、<br>
+                                            さらに奥の手アイテムを編み出します。<br>
+                                            その名は｢試食棒｣。<br>
+                                            試食コーナーで自然にできてしまう、お客様との距離は約<i class="stage_desc_text_rotate stage_desc_text_rotate_single">2</i> ｍ。<br>
+                                            声をかけられないよう設けられた心と体の溝を、<br>
+                                            埋める道具を発明したのです。<br>
+                                            この棒は長い柄杓のようなもの。<br>
+                                            ディスタンスは保ちつつ、棒だけがニョキニョキとお客様に近づき、<br>
+                                            好奇心から試食に手を出してしまうという仕掛けです。<br>
+                                            イカの姿で注目を集め、試食棒で回収する。<br>
                                             射程距離は約<i class="stage_desc_text_rotate">20</i>ｍにおよぶと推測しています。
                                         </span>
                     </h2>
@@ -216,16 +219,16 @@
                       <img src="<?php echo get_template_directory_uri(); ?>/common/images/about/stage-caption-5.png" class="d_img" alt="">
                     </h2>
                     <p class="stage_description stage_8_desc stage_8_desc_1">
-                                        <span class="stage_desc_text stage_8_desc_text f_writing_rl f__ln__36 f__ltr__2 f__wt__8">お客様を呼び込むことが苦手だった二代目が、
-                                            変身 + アイテムによって手に入れたもの。
-                                            それは｢おもしろそう！｣と感じてもらい、
-                                            人々が気軽にワチャワチャ集まってくる場をつくる術。
-                                            こうして世の中が気づいていないスキマ的な魅力を掘り起こし、
-                                            お客様とそのおいしさや楽しさを共有する使命を獲得しました。
-                                            めざすのは自分自身が楽しめて、
-                                            お客様も大いに喜んでくれる形。
-                                            これからもハレリーならではの行商スタイルと、
-                                            大マジメに繰り広げられる楽しいおふざけに
+                                        <span class="stage_desc_text stage_8_desc_text f_writing_rl f__ln__36 f__ltr__2 f__wt__8">お客様を呼び込むことが苦手だった二代目が、<br class="sp_none">
+                                            変身 + アイテムによって手に入れたもの。<br>
+                                            それは｢おもしろそう！｣と感じてもらい、<br class="sp_none">
+                                            人々が気軽にワチャワチャ集まってくる場をつくる術。<br>
+                                            こうして世の中が気づいていないスキマ的な魅力を掘り起こし、<br>
+                                            お客様とそのおいしさや楽しさを共有する使命を獲得しました。<br>
+                                            めざすのは自分自身が楽しめて、<br class="sp_none">
+                                            お客様も大いに喜んでくれる形。<br>
+                                            これからもハレリーならではの行商スタイルと、<br>
+                                            大マジメに繰り広げられる楽しいおふざけに<br class="sp_none">
                                             どうぞおつき合いくださいね。
                                         </span>
                     </p>
