@@ -391,7 +391,7 @@
     }
 
     .stage_2_desc_2 {
-        width: auto;
+        width: 3.8em;
     }
 
     .stage_2_halery {
@@ -400,7 +400,7 @@
     }
 
     .stage_3_desc_2 {
-        width: auto;
+        width: 4.8em;
     }
 
     .stage_3_halery {
@@ -411,6 +411,10 @@
     .stage_4_halery {
         width: 30%;
         bottom: 2%;
+    }
+
+    .stage_4_desc_2 {
+        width: 7.8em;
     }
 
     .stage_5_halery {
