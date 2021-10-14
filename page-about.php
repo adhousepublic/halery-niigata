@@ -928,11 +928,27 @@
   <?php endif; ?>
 
   <script>
-    $(window).on('load resize', function() {
-      var oyaDIV=document.getElementById('stageWrap');
-      var koDIV=document.getElementById('stage');
+    var oyaDIV=document.getElementById('stageWrap');
+    var koDIV=document.getElementById('stage');
+    function leftScroll() {
       oyaDIV.scrollLeft=koDIV.scrollWidth;
+    }
+    $(window).on('load', function() {
+      leftScroll();
     });
+
+    var lastInnerWidth = window.innerWidth ;
+
+    window.addEventListener( "resize", function () {
+      // 現在と前回の横幅が違う場合だけ実行
+      if ( lastInnerWidth != window.innerWidth ) {
+        // 横幅を記録しておく
+        lastInnerWidth = window.innerWidth ;
+        leftScroll();
+        // 処理内容
+      }
+    } ) ;
+
   </script>
 
 <?php
