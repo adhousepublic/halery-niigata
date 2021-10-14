@@ -637,6 +637,7 @@
         transform: translateX(50%);
         width: 80%;
         height: 40vh;
+        bottom: 4%;
     }
 
     .stage_6_halery_wrap {
