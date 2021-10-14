@@ -362,6 +362,51 @@
         width: 100%;
     }
 
+    .sp_halery_stageWrap {
+        width: 100%;
+        height: 100%;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        background-color: var(--main-color-tone-lignt);;
+    }
+
+    .sp_halery_stage {
+        width: auto;
+        height: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: unset;
+    }
+
+    .sp_halery_stage_section {
+        min-width: 100%;
+        height: 100%;
+        flex: 1 0 auto;
+    }
+
+    .sp_halery_stage_section:nth-of-type(1) {
+        order: 1;
+    }
+
+    .sp_halery_stage_content {
+        min-width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .sp_halery_stage_content p {
+        height: 45vh;
+        -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        -webkit-font-feature-settings: initial;
+        font-feature-settings: initial;
+        font-weight: 800;
+        line-height: 1.8;
+        letter-spacing: 1px;
+    }
+
     .stage_wrap {
         --stage-main-base-height: 100vh;
         --stage-slide-nav-base-width: 50px;
@@ -372,31 +417,85 @@
     }
 
     .stage_1_ikauruma {
-        width: 30%;
+        width: 35%;
+        left: 50%;
+        transform: translateX(-40%);
     }
 
     .stage_1_desc {
         width: 50%;
         top: 10%;
-        right: 18%;
+        right: 50%;
+        transform: translateX(50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .stage_1_desc_text {
         right: 26%;
+        top: 0;
+        padding-top: 20px;
+        width: 7.2em;
     }
+
+    .stage_1_stand,
+    .stage_1_ikauruma,
+    .stage_1_ika {
+        bottom: 4%;
+    }
+
+    .stage_scene_1_content .stage_caption,
+    .stage_scene_1_content .stage_description {
+        top: 10%;
+        position: absolute;
+    }
+
+    .sp_halery_stage_content_title {
+        width: 50px;
+    }
+
+    .sp_halery_stage_content_title img {
+        max-width: 100%;
+    }
+
 
     .stage_caption,
     .stage_description {
-        top: 10%;
+        position: static;
+    }
+
+    .stage_scene_2_content {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 40px 40px 0;
+    }
+
+    .stage_2_desc_1,
+    .stage_2_desc_2 {
+        width: auto;
     }
 
     .stage_2_desc_2 {
-        width: 3.8em;
+        padding-right: 1em;
     }
 
     .stage_2_halery {
         width: 30%;
+        height: 40vh;
         left: 14%;
+        bottom: 4%;
+    }
+
+    .stage_2_halery_wrap {
+        height: 100%;
+    }
+
+    .stage_2_halery img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: 50% 100%;
     }
 
     .stage_3_desc_2 {
