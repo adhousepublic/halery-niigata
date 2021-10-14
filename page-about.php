@@ -632,7 +632,7 @@
                     </p>
                     <div class="stage_6_halery">
             <span class="stage_6_halery_wrap">
-            <img src="<?php echo get_template_directory_uri(); ?>/common/images/about/stage-graph-5-1-2.png" class="stage_6_the_graph sp_visible" alt="あのイカ、前も見たわ何者かしら…">
+            <img src="<?php echo get_template_directory_uri(); ?>/common/images/about/stage-graph-5-1.png" class="stage_6_the_graph sp_visible" alt="あのイカ、前も見たわ何者かしら…">
             </span>
                     </div>
                   </div>
