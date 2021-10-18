@@ -445,7 +445,7 @@
     }
 
     .sp_halery_stage_content p {
-        height: 60vh;
+        height: 50vh;
         -webkit-writing-mode: vertical-rl;
         -ms-writing-mode: tb-rl;
         writing-mode: vertical-rl;
@@ -550,7 +550,7 @@
     }
 
     .stage_description {
-        height: 60vh;
+        height: 50vh;
         -webkit-writing-mode: vertical-rl;
         -ms-writing-mode: tb-rl;
         writing-mode: vertical-rl;
@@ -591,10 +591,9 @@
     }
 
     .stage_2_halery img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: 50% 100%;
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
     }
 
     .stage_3_desc_2 {
@@ -605,7 +604,7 @@
         width: 74vh;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 10%;
+        bottom: 8%;
         max-width: calc(100% - 60px);
         height: 30vh;
     }
@@ -616,16 +615,15 @@
     }
 
     .stage_3_halery img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: 50% 100%;
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
     }
 
     .stage_4_halery {
         width: 45vh;
         height: 30vh;
-        bottom: 10%;
+        bottom: 8%;
         left: 50%;
         right: auto;
         max-width: calc(100% - 60px);
@@ -638,10 +636,9 @@
     }
 
     .stage_4_halery img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: 50% 100%;
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
     }
 
     .stage_4_desc_2 {
@@ -675,9 +672,9 @@
     }
 
     .stage_5_halery img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
     }
 
 
@@ -692,7 +689,7 @@
         transform: translateX(50%);
         width: 56vh;
         height: 30vh;
-        bottom: 10%;
+        bottom: 8%;
         max-width: calc(100% - 60px);
     }
 
@@ -702,10 +699,9 @@
     }
 
     .stage_6_halery img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        object-position: 50% 100%;
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
     }
 
     .stage_7_halery {
@@ -715,7 +711,7 @@
         top: auto;
         transform: translateX(-50%);
         max-width: calc(100% - 60px);
-        bottom: 10%;
+        bottom: 8%;
     }
 
     .stage_7_halery_wrap {
@@ -724,15 +720,14 @@
     }
 
     .stage_7_halery img {
-        width: 100%;
-        height: 100%;
-        object-position: 50% 100%;
-        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
     }
 
     .sp_halery_stage_content p.stage_8_desc {
         padding-right: 3em;
-        height: 60vh;
+        height: 50vh;
     }
 
     .stage_8_halery {
@@ -741,7 +736,7 @@
         left: 50%;
         top: auto;
         max-width: calc(100% - 60px);
-        bottom: 10%;
+        bottom: 8%;
         transform: translateX(-50%);
     }
 
@@ -751,9 +746,9 @@
     }
 
     .stage_8_halery img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+        max-width: 100%;
+        height: auto;
+        vertical-align: bottom;
     }
 
 }
