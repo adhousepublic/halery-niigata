@@ -536,7 +536,7 @@
     }
 
     .sp_halery_stage_content_title {
-        width: 50px;
+        width: 16vw;
     }
 
     .sp_halery_stage_content_title img {
@@ -578,12 +578,12 @@
     }
 
     .stage_2_halery {
-        width: 90%;
+        width: 44vh;
         height: 30vh;
         left: 50%;
-        bottom: 4%;
+        bottom: 10%;
         transform: translateX(-50%);
-        max-width: none;
+        max-width: calc(100% - 60px);
     }
 
     .stage_2_halery_wrap {
@@ -602,11 +602,11 @@
     }
 
     .stage_3_halery {
-        width: 90%;
+        width: 74vh;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 4%;
-        max-width: none;
+        bottom: 10%;
+        max-width: calc(100% - 60px);
         height: 30vh;
     }
 
@@ -623,12 +623,12 @@
     }
 
     .stage_4_halery {
-        width: 90%;
+        width: 45vh;
         height: 30vh;
-        bottom: 4%;
+        bottom: 10%;
         left: 50%;
         right: auto;
-        max-width: none;
+        max-width: calc(100% - 60px);
         transform: translateX(-50%);
     }
 
@@ -690,10 +690,10 @@
     .stage_6_halery {
         right: 50%;
         transform: translateX(50%);
-        width: 90%;
+        width: 56vh;
         height: 30vh;
-        bottom: 4%;
-        max-width: none;
+        bottom: 10%;
+        max-width: calc(100% - 60px);
     }
 
     .stage_6_halery_wrap {
@@ -709,13 +709,13 @@
     }
 
     .stage_7_halery {
-        width: 90%;
+        width: 63vh;
         left: 50%;
         height: 30vh;
         top: auto;
         transform: translateX(-50%);
-        max-width: none;
-        bottom: 4%;
+        max-width: calc(100% - 60px);
+        bottom: 10%;
     }
 
     .stage_7_halery_wrap {
@@ -736,12 +736,12 @@
     }
 
     .stage_8_halery {
-        width: 90%;
+        width: 47vh;
         height: 30vh;
         left: 50%;
         top: auto;
-        max-width: none;
-        bottom: 4%;
+        max-width: calc(100% - 60px);
+        bottom: 10%;
         transform: translateX(-50%);
     }
 
