@@ -436,7 +436,7 @@
         display: flex;
         justify-content: center;
         flex-direction: row-reverse;
-        padding: 40px 60px 0;
+        padding: 60px 60px 0;
     }
 
     .sp_halery_stage_section-1 .sp_halery_stage_content {
@@ -445,7 +445,7 @@
     }
 
     .sp_halery_stage_content p {
-        height: 45vh;
+        height: 60vh;
         -webkit-writing-mode: vertical-rl;
         -ms-writing-mode: tb-rl;
         writing-mode: vertical-rl;
@@ -463,7 +463,7 @@
     }
 
     .stage_desc_text {
-        font-size: 3vw;
+        font-size: 3.6vw;
     }
     .stage_1_desc_dailogue-sp {
         width: 100%;
@@ -477,9 +477,15 @@
         transform: translateX(-40%);
     }
 
+    .elmt_uruma_lefthand,
+    .elmt_uruma_righthand {
+        z-index: -1;
+    }
+
     .stage_1_desc {
+        height: auto !important;
         width: 50%;
-        top: 10%;
+        /*top: 10%;*/
         right: 50%;
         transform: translateX(50%);
         display: flex;
@@ -487,11 +493,33 @@
         justify-content: center;
     }
 
+
     .stage_1_desc_text {
-        right: 26%;
-        top: 0;
-        padding-top: 5vh;
+        position: static;
+        padding-top: 0;
         width: 7.2em;
+    }
+    .stage_1_desc_text::before,
+    .stage_1_desc_text::after {
+        content: '';
+        width: 2px;
+        height: 128px;
+        background: #000;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        position: absolute;
+        bottom: -10px;
+    }
+
+    .stage_1_desc_text::before {
+        left: 0;
+        transform: rotate(-20deg);
+    }
+
+    .stage_1_desc_text::after {
+        right: 0;
+        transform: rotate(20deg);
     }
 
     .stage_1_stand,
@@ -502,8 +530,9 @@
 
     .stage_scene_1_content .stage_caption,
     .stage_scene_1_content .stage_description {
-        top: 10%;
+        top: auto;
         position: absolute;
+        bottom: 45%;
     }
 
     .sp_halery_stage_content_title {
@@ -521,7 +550,7 @@
     }
 
     .stage_description {
-        height: 45vh;
+        height: 60vh;
         -webkit-writing-mode: vertical-rl;
         -ms-writing-mode: tb-rl;
         writing-mode: vertical-rl;
@@ -549,10 +578,12 @@
     }
 
     .stage_2_halery {
-        width: 50%;
-        height: 40vh;
-        left: 14%;
+        width: 90%;
+        height: 30vh;
+        left: 50%;
         bottom: 4%;
+        transform: translateX(-50%);
+        max-width: none;
     }
 
     .stage_2_halery_wrap {
@@ -571,11 +602,12 @@
     }
 
     .stage_3_halery {
-        width: 60%;
+        width: 90%;
         left: 50%;
         transform: translateX(-50%);
         bottom: 4%;
-        height: 40vh;
+        max-width: none;
+        height: 30vh;
     }
 
     .stage_3_halery_wrap {
@@ -591,9 +623,13 @@
     }
 
     .stage_4_halery {
-        width: 60%;
-        height: 40vh;
+        width: 90%;
+        height: 30vh;
         bottom: 4%;
+        left: 50%;
+        right: auto;
+        max-width: none;
+        transform: translateX(-50%);
     }
 
     .stage_4_halery_wrap {
@@ -618,7 +654,7 @@
 
     .stage_5_halery {
         width: 110vw;
-        height: 40vh;
+        height: 45vh;
         left: 50%;
         right: auto;
         transform: translateX(-50%);
@@ -633,7 +669,7 @@
         width: 145%;
         position: absolute;
         bottom: -30%;
-        left: 51%;
+        left: 50%;
         z-index: -1;
         transform: translateX(-50%);
     }
@@ -654,9 +690,10 @@
     .stage_6_halery {
         right: 50%;
         transform: translateX(50%);
-        width: 80%;
-        height: 40vh;
+        width: 90%;
+        height: 30vh;
         bottom: 4%;
+        max-width: none;
     }
 
     .stage_6_halery_wrap {
@@ -672,11 +709,12 @@
     }
 
     .stage_7_halery {
-        width: 80%;
+        width: 90%;
         left: 50%;
-        height: 40vh;
+        height: 30vh;
         top: auto;
         transform: translateX(-50%);
+        max-width: none;
         bottom: 4%;
     }
 
@@ -694,14 +732,15 @@
 
     .sp_halery_stage_content p.stage_8_desc {
         padding-right: 3em;
-        height: 45vh;
+        height: 60vh;
     }
 
     .stage_8_halery {
-        width: 80%;
-        height: 40vh;
-        left: calc(50% - 50px);
+        width: 90%;
+        height: 30vh;
+        left: 50%;
         top: auto;
+        max-width: none;
         bottom: 4%;
         transform: translateX(-50%);
     }
