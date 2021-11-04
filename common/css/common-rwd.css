@@ -113,6 +113,22 @@
     padding-right: 12px;
   }
   /*----------------------------------------{ inner - about }---*/
+  /* stage-1 */
+  /* //stage-1 */
+  /* stage-2 */
+  /* //stage-2 */
+  /* stage-3 */
+  /* //stage-3 */
+  /* stage-4 */
+  /* //stage-4 */
+  /* stage-5 */
+  /* //stage-5 */
+  /* stage-6 */
+  /* //stage-6 */
+  /* stage-7 */
+  /* //stage-7 */
+  /* stage-8 */
+  /* //stage-8 */
   /*----------------------------------------{ inner - allstars }---*/
   /*----------------------------------------{ inner - blog }---*/
   /*----------------------------------------{ inner - journey }---*/
@@ -148,6 +164,22 @@
   /*---- top - franchise ---*/
   /*----------------------------------------{ inner - common }---*/
   /*----------------------------------------{ inner - about }---*/
+  /* stage-1 */
+  /* //stage-1 */
+  /* stage-2 */
+  /* //stage-2 */
+  /* stage-3 */
+  /* //stage-3 */
+  /* stage-4 */
+  /* //stage-4 */
+  /* stage-5 */
+  /* //stage-5 */
+  /* stage-6 */
+  /* //stage-6 */
+  /* stage-7 */
+  /* //stage-7 */
+  /* stage-8 */
+  /* //stage-8 */
   /*----------------------------------------{ inner - allstars }---*/
   /*----------------------------------------{ inner - blog }---*/
   /*----------------------------------------{ inner - journey }---*/
@@ -183,6 +215,22 @@
   /*---- top - franchise ---*/
   /*----------------------------------------{ inner - common }---*/
   /*----------------------------------------{ inner - about }---*/
+  /* stage-1 */
+  /* //stage-1 */
+  /* stage-2 */
+  /* //stage-2 */
+  /* stage-3 */
+  /* //stage-3 */
+  /* stage-4 */
+  /* //stage-4 */
+  /* stage-5 */
+  /* //stage-5 */
+  /* stage-6 */
+  /* //stage-6 */
+  /* stage-7 */
+  /* //stage-7 */
+  /* stage-8 */
+  /* //stage-8 */
   /*----------------------------------------{ inner - allstars }---*/
   /*----------------------------------------{ inner - blog }---*/
   /*----------------------------------------{ inner - journey }---*/
@@ -213,11 +261,61 @@
   }
   /*---- top - topic item's feature ---*/
   /*---- top - recommended ---*/
+  .top_recommended::after {
+    display: none;
+    opacity: 0;
+    background-image: none;
+  }
   /*---- top - blog ---*/
+  .top_blog_latest::before {
+    --top-blog-elmt-ika-base-width: 125px;
+  }
   /*---- top - franchise ---*/
   /*----------------------------------------{ inner - common }---*/
   /*----------------------------------------{ inner - about }---*/
+  .stage_wrap {
+    --stage-slide-nav-posi-x: 8%;
+    --stage-slide-nav-posi-y: 3%;
+    width: 100%;
+  }
+  .stage_decorate_2_left.act__on .stage_decorate_2_left_elmt,
+  .stage_decorate_2_right.act__on .stage_decorate_2_right_elmt {
+    -webkit-transition: .625s linear;
+    -o-transition: .625s linear;
+    transition: .625s linear;
+    -webkit-transition-delay: .325s;
+         -o-transition-delay: .325s;
+            transition-delay: .325s;
+  }
+  .stage_decorate_2_left.act__on .stage_decorate_2_left_elmt {
+    -webkit-transform: translate3d(20px, 0, 0);
+            transform: translate3d(20px, 0, 0);
+  }
+  .stage_decorate_2_right.act__on {
+    -webkit-transform: translate3d(-20px, 0, 0);
+            transform: translate3d(-20px, 0, 0);
+  }
+  /* stage-1 */
+  /* //stage-1 */
+  /* stage-2 */
+  /* //stage-2 */
+  /* stage-3 */
+  /* //stage-3 */
+  /* stage-4 */
+  /* //stage-4 */
+  /* stage-5 */
+  /* //stage-5 */
+  /* stage-6 */
+  /* //stage-6 */
+  /* stage-7 */
+  /* //stage-7 */
+  /* stage-8 */
+  /* //stage-8 */
   /*----------------------------------------{ inner - allstars }---*/
+  .salts_item_close {
+    top: 5.5%;
+    right: 8%;
+  }
   /*----------------------------------------{ inner - blog }---*/
   /*----------------------------------------{ inner - journey }---*/
 
@@ -317,13 +415,29 @@
   }
   /*----------------------------------------{ inner - common }---*/
   /*----------------------------------------{ inner - about }---*/
+  /* stage-1 */
+  /* //stage-1 */
+  /* stage-2 */
+  /* //stage-2 */
+  /* stage-3 */
+  /* //stage-3 */
+  /* stage-4 */
+  /* //stage-4 */
+  /* stage-5 */
+  /* //stage-5 */
+  /* stage-6 */
+  /* //stage-6 */
+  /* stage-7 */
+  /* //stage-7 */
+  /* stage-8 */
+  /* //stage-8 */
+  /*----------------------------------------{ inner - allstars }---*/
+  /*----------------------------------------{ inner - blog }---*/
   .cmn_blog_tab_caption {
     padding-left: 2.5%;
     padding-right: 2.5%;
     margin-bottom: var(--cmn-blog-tab-base-margin);
   }
-  /*----------------------------------------{ inner - allstars }---*/
-  /*----------------------------------------{ inner - blog }---*/
   /*----------------------------------------{ inner - journey }---*/
 
 }
@@ -511,18 +625,20 @@
     opacity: 0;
   }
   .tfs_elmt_butsu {
-    width: 42%;
+    opacity: 0;
+    /* width: 42%;
     max-width: 220px;
-    left: 28%;
+    left: 28%; */
   }
   .tfs_elmt_otera {
     opacity: 0;
   }
   .tfs_elmt_jesuschrist {
-    width: 52%;
+    opacity: 0;
+    /* width: 52%;
     max-width: 320px;
     right: 17%;
-    bottom: -5vh;
+    bottom: -5vh; */
   }
   .tfs_elmt_plant {
     width: 32%;
@@ -593,17 +709,22 @@
     right: 2%;
     bottom: -1.5vh;
   }
+  .tfs_elmt_drive_navy {
+    animation-duration: 13s;
+  }
   .tfs_elmt_drive_ong {
     width: 42%;
     max-width: 260px;
-    left: 80%;
+    /* left: 80%; */
     bottom: -17vh;
+    animation-duration: 6s;
   }
   .tfs_elmt_ikaalien {
-    width: 15%;
+    opacity: 0;
+    /* width: 15%;
     max-width: 100px;
     left: 3%;
-    bottom: -24.5vh;
+    bottom: -24.5vh; */
   }
   /* top - first scene (SVG element - fake couple) */
   .tfs_elmt_couple {
@@ -616,21 +737,57 @@
   /*---- top - concept ---*/
   /*---- top - topic & campaign slider ---*/
   /*---- top - topic item's feature ---*/
+  .top_feature::before {
+    --top-feature-elmt-ika-base-width: 80px;
+    /* left: 70%; */
+    bottom: clamp(10px,1.35%,25px);
+  }
   /*---- top - recommended ---*/
   /*---- top - blog ---*/
+  .top_blog_latest::before {
+    --top-blog-elmt-ika-base-width: 90px;
+  }
   /*---- top - franchise ---*/
   .top_franchise {
     padding-bottom: var(--pad-320);/*footer padding*/
   }
   /*----------------------------------------{ inner - common }---*/
+  #inner-first-scene {
+    background-image: none !important;
+  }
+  #inner-first-scene::after {
+    bottom: -10px;
+    background-size: 1680px auto;
+  }
   .inner_content_wrap {
     padding-bottom: var(--pad-320);/*footer padding*/
   }
   /*----------------------------------------{ inner - about }---*/
+  /* stage-1 */
+  /* //stage-1 */
+  /* stage-2 */
+  /* //stage-2 */
+  /* stage-3 */
+  /* //stage-3 */
+  /* stage-4 */
+  /* //stage-4 */
+  /* stage-5 */
+  /* //stage-5 */
+  /* stage-6 */
+  /* //stage-6 */
+  /* stage-7 */
+  /* //stage-7 */
+  /* stage-8 */
+  /* //stage-8 */
   /*----------------------------------------{ inner - allstars }---*/
   /*----------------------------------------{ inner - blog }---*/
   /*----------------------------------------{ inner - journey }---*/
-
+  .inner_journey #inner-first-scene::after {
+    background-image: url(../images/snack_journeys/page-mv-3.png);
+    background-repeat: no-repeat;
+    background-size: 1680px auto;
+    background-position: center bottom;
+  }
 }
 
 /* //MARK: 768 *//*iPad regular type"*/
@@ -655,9 +812,15 @@
   --wmax_1366: calc(100% - 40px);
   --wmax_1024: calc(100% - 40px);
 } */
+body {
+  font-size: .813rem;
+}
+.ie11 body {
+	font-size: 13px;
+}
 /*----------------------------------------{ common setting }---*/
-.f__16 {font-size:.875rem;}
-.f__18 {font-size:.825rem;}
+.f__16 {font-size:.825rem;}
+.f__18 {font-size:.875rem;}
 .f__20 {font-size:.938rem;}
 .f__22,
 .wysiwyg_format h4,
@@ -793,7 +956,7 @@
   width: 100%;
 }
 .m_nav_link_list {
-  margin-bottom: 6%;
+  margin-top: 6%;
 }
 .m_nav_the_link {
   display: block;
@@ -868,12 +1031,12 @@
   .tfs_elmt_mtfuji {
     left: -34.5%;
   }
-  .tfs_elmt_jesuschrist {
+  /* .tfs_elmt_jesuschrist {
     right: 10%;
-  }
-  .tfs_elmt_butsu {
+  } */
+  /* .tfs_elmt_butsu {
     left: 25%;
-  }
+  } */
   /* top - first scene (SVG element - ground) */
   .tfs_elmt_the_ground_wrap {
     height: 110%;
@@ -885,9 +1048,9 @@
   .tfs_elmt_petwalk {
     opacity: 0;
   }
-  .tfs_elmt_ikaalien {
+  /* .tfs_elmt_ikaalien {
     opacity: 0;
-  }
+  } */
   /* top - first scene (SVG element - fake couple) */
   .tfs_elmt_couple {
     left: 5%;
@@ -987,6 +1150,10 @@
   --top-feature-info-base-width: 100;
   --top-feature-bgpattern-base-height: 34px;
 }
+.top_feature::before {
+  --top-feature-elmt-ika-base-width: 60px;
+  bottom: clamp(10px,.8%,20px);
+}
 .top_feature_caption {
   width: 85%;
   max-width: initial;
@@ -1069,6 +1236,12 @@
   width: 70%;
   margin-left: 4%;
   margin-bottom: 25px;
+}
+.top_blog_latest::before {
+  --top-blog-elmt-ika-base-width: 80px;
+  left: initial;
+  right: -23%;
+  top: -11%;
 }
 .top_blog_all,
 .top_blog_to_all_link {
@@ -1169,10 +1342,30 @@
   top: -50%;
 }
 /*----------------------------------------{ inner - common }---*/
+#inner-first-scene::after {
+  bottom: -7px;
+  background-size: 1200px auto;
+}
 .inner_content {
   padding-top: var(--pad-60);
 }
 /*----------------------------------------{ inner - about }---*/
+/* stage-1 */
+/* //stage-1 */
+/* stage-2 */
+/* //stage-2 */
+/* stage-3 */
+/* //stage-3 */
+/* stage-4 */
+/* //stage-4 */
+/* stage-5 */
+/* //stage-5 */
+/* stage-6 */
+/* //stage-6 */
+/* stage-7 */
+/* //stage-7 */
+/* stage-8 */
+/* //stage-8 */
 /*----------------------------------------{ inner - allstars }---*/
 /*----------------------------------------{ inner - blog }---*/
 .cmn_blog_tab_group {
@@ -1211,7 +1404,9 @@
   line-height: 35%;
 }
 /*----------------------------------------{ inner - journey }---*/
-
+.inner_journey #inner-first-scene::after {
+  background-size: 1200px auto;
+}
 }
 
 /* //MARK: 414 */
