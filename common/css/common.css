@@ -1080,6 +1080,7 @@ svg circle {
   line-height: 100%;
   text-transform: uppercase;
 }
+/*20220113*/
 .cmn_contact_group_style {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1093,13 +1094,14 @@ svg circle {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 380px;
+  max-width: 450px;
 }
 /* .cmn_contact_group_style svg {
   color: var(--main-color-tone);
 } */
+/*20220113*/
 .cmn_contact_btn_style {
-  width: calc(81% - 20px);
+  width: calc(71% - 20px);
 }
 .cmn_contact_btn_link {
   display: -webkit-box;
@@ -1128,6 +1130,7 @@ svg circle {
   font-size: 1rem;
   line-height: 100%;
 }
+/*20220113*/
 .cmn_contact_sns_block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1138,10 +1141,11 @@ svg circle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 19%;
+  width: 28%;
 }
+/*20220113*/
 .cmn_contact_and_sns_list {
-  width: calc(50% - 10px);
+  width: calc(30% - 10px);
 }
 .cmn_contact_sns_link {
   display: block;
@@ -1308,8 +1312,9 @@ svg circle {
   position: relative;
   right: 0;/*5vw*/
 }
+/*20220113*/
 .aside_sns_group {
-  display: -webkit-box;
+  /* display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
@@ -1317,11 +1322,18 @@ svg circle {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
+          align-items: center; */
+  display: block;
 }
 .aside_sns_group .the_sns_list {
   display: block;
-  width: 35%;
+  width: 36%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.sns_list_instagram {
+  margin-top: 0;
 }
 .aside_sns_group .sns_access_link {
   display: block;

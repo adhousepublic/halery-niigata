@@ -514,13 +514,15 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  /*20220113*/
   .cmn_contact_btn_style {
     width: 100%;
     max-width: 280px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
+  /*20220113*/
   .cmn_contact_sns_block {
-    width: 68px;
+    width: 108px;
   }
   .footer_link_group {
     /* flex-wrap: wrap;
