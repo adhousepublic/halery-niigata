@@ -2592,6 +2592,7 @@ img.tfs_elmt_the_road {
 }
 .top_feature_group img {
   width: auto;
+  max-width: initial !important;
   height: 100%;
 }
 .top_feature_list {
