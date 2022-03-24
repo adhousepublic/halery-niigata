@@ -363,7 +363,22 @@
   /* top - first scene (SVG element - ground) */
   /* top - first scene (SVG element - fake couple) */
   /*---- top - instagram ---*/
-  /*---- top - concept ---*/
+  /*---- top - twitter ---*/
+  .top_twitter_container {
+    width: 100%;
+    max-width: initial;
+    padding-top: var(--pad-120);
+  }
+  .top_twitter_caption {
+    width: 24px;
+    max-width: initial;
+  }
+  .halery_on_twitter {
+    width: 72%;
+    height: 420px;
+    padding-bottom: var(--pad-120);
+  }
+  /*---- top - //twitter ---*/
   /*---- top - topic & campaign slider ---*/
   .top_campaign_slider {
     --top-cmpg-nav-base-width: 16px;
